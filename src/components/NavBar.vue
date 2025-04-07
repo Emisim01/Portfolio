@@ -2,7 +2,7 @@
     <nav class="p-4 pt-6 uppercase font-bold">
         
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/protjects">Protjects</RouterLink>
+        <RouterLink to="/projects">Projects</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/movies">Contact</RouterLink>
 
