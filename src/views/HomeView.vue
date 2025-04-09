@@ -50,22 +50,34 @@ const marqueeText2 = ref(' PORTFOLIO ')
   <section class="card-section">
     <p class="section-title text-very-bluey font-bold uppercase pt-15 ">Projects</p>
   <div class="blob-row">
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
-  </div>
+    <div class="blob">
+      <router-link to="/illustrations" class="blob-text1 uppercase">Illustrations</router-link>
+    </div>
+    <div class="blob">
+      <router-link to="/pictures" class="blob-text uppercase">Pictures</router-link>
+    </div>
+    <div class="blob">
+      <router-link to="/ux" class="blob-text uppercase">UX</router-link>
+    </div>
+    </div>
 
   <div class="blob-row">
-    <div class="blob"></div>
-    <div class="blob"></div>
-    <div class="blob"></div>
+    <div class="blob">
+      <router-link to="/frontend development" class="blob-text1 uppercase">Frontend development</router-link>
+    </div>
+    <div class="blob">
+      <router-link to="/exams" class="blob-text uppercase">Exams</router-link>
+    </div>
+    <div class="blob">
+      <router-link to="/production" class="blob-text uppercase">Video Production</router-link>
+    </div>
   </div>
 
   </section>
 
   <section class="about-section">
 
-    <p class="section-abouttitle text-very-bluey font-bold uppercase pt-15 ">About me</p>
+    <p class="section-abouttitle text-very-bluey font-bold uppercase ">About me</p>
   
     <div class="about-content">
     <div class="imgContainer"></div>
@@ -87,9 +99,30 @@ const marqueeText2 = ref(' PORTFOLIO ')
 </section>
 
 <section class="video-section">
-<div class="vidCV"></div>
+  <div class="vidCV">
+    <iframe 
+      src="https://www.youtube.com/embed/n8zP014DeQE" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <div class="lineonly"></div>
+</section>
 
-<div class="lineonly"></div>
+<section class="last-section">
+  <div class="blob-row">
+    <div class="blob">
+      <router-link to="/CV" class="blob-text uppercase">CV</router-link>
+
+    </div>
+    <div class="blob">
+      <router-link to="/business card" class="blob-text uppercase">Business card</router-link>
+
+    </div>
+  </div>
+  
 </section>
 
 </template>
@@ -184,8 +217,38 @@ const marqueeText2 = ref(' PORTFOLIO ')
   background-size: cover; /* Sørger for, at billedet fylder hele containeren */
   background-position: center; /* Centrerer billedet */
   background-repeat: no-repeat;
+  display: flex; /* Gør det muligt at centrere teksten */
+  justify-content: center; /* Centrerer teksten horisontalt */
+  align-items: center; /* Centrerer teksten vertikalt */
+  text-align: center; /* Sørger for, at teksten er centreret */
+  color: white; /* Gør teksten synlig */
+  font-size: 16px; /* Juster tekststørrelsen */
+  font-weight: bold; /* Gør teksten fed */
+  margin-bottom: 55px;
 }
 
+.blob-text {
+  text-decoration: none; /* Fjerner understregning */
+  color: white; /* Beholder teksten hvid */
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.blob-text:hover {
+  font-size: 32px;
+}
+
+.blob-text1 {
+  text-decoration: none; /* Fjerner understregning */
+  color: white; /* Beholder teksten hvid */
+  font-weight: bold;
+  font-size: 28px;
+  padding-right: 75px;
+}
+
+.blob-text1:hover {
+  font-size: 32px;
+}
 /* ------------------------------------------- ABOUT SECTION --------------------------------------------*/
 
 
@@ -232,6 +295,24 @@ const marqueeText2 = ref(' PORTFOLIO ')
   text-align: center; /* Centrerer teksten inde i blobContainer */
   color: white; /* Sørger for, at teksten er læsbar */
   font-size: 20px;
+}
+
+/* ------------------------------------------- VIDEO CV --------------------------------------------*/
+
+
+.vidCV {
+  max-width: 1000px; /* Maksimal bredde */
+  aspect-ratio: 16 / 9; /* Sørger for, at videoen har det rigtige format */
+  margin: 0 auto; /* Centrerer videoen horisontalt */
+  border: 3px solid var(--color-white); /* Tilføjer en kant */
+  border-radius: 5px; /* Gør hjørnerne runde */
+  margin-bottom: 55px;
+ 
+}
+
+.vidCV iframe {
+  width: 100%; /* Sørger for, at videoen fylder hele containeren */
+  height: 100%; /* Sørger for, at videoen fylder hele containeren */
 }
 
 /* ------------------------------------------- CV AND BUSINESS CARD SECTION --------------------------------------------*/
