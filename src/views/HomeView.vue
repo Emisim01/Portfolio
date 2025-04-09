@@ -48,14 +48,55 @@ const marqueeText2 = ref(' PORTFOLIO ')
   </main>
 
   <section class="card-section">
-    <p class="section-title text-6xl text-very-blue font-bold uppercase pt-15 ">Projects</p>
+    <p class="section-title text-very-bluey font-bold uppercase pt-15 ">Projects</p>
+  <div class="blob-row">
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+  </div>
 
+  <div class="blob-row">
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+  </div>
 
   </section>
+
+  <section class="about-section">
+
+    <p class="section-abouttitle text-very-bluey font-bold uppercase pt-15 ">About me</p>
+  
+    <div class="about-content">
+    <div class="imgContainer"></div>
+
+    <div class="blobContainer">
+      <div class="textContainer">
+        <p class=" text-white font-bold">
+                HI!        </p>
+        <p class=" text-white px-10">
+          I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
+          and I love expressing myself through my work. My portfolio is a reflection of that passion—and
+          I hope you feel inspired and connected as you explore it.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="lineonly"></div>
+
+</section>
+
+<section class="video-section">
+<div class="vidCV"></div>
+
+<div class="lineonly"></div>
+</section>
 
 </template>
 
 <style scoped>
+
+
 
 .rolltextOne {
   border-right: 4px solid #fff;
@@ -102,15 +143,6 @@ const marqueeText2 = ref(' PORTFOLIO ')
   margin-top: 0;
 }
 
-.section-title {
-  text-align: center;
-  margin-left: 120px;
-  margin-bottom: 70px;
-  border-bottom: 3px solid var(--color-white);
-  width: 100%
-
-}
-
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -119,4 +151,98 @@ const marqueeText2 = ref(' PORTFOLIO ')
     transform: translateX(-100%);
   }
 }
+
+/* ------------------------------------------- PROJECT SECTION --------------------------------------------*/
+
+.section-title {
+  font-size: 54px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  border-bottom: 3px solid var(--color-white);
+  width: 85%;
+
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrerer indholdet horisontalt */
+  gap: 20px; /* Tilføjer mellemrum mellem overskriften og blobs */
+}
+
+.blob-row {
+  display: flex; /* Placerer blobs på en række */
+  justify-content: center; /* Centrerer blobs horisontalt */
+  gap: 20px; /* Tilføjer mellemrum mellem blobs */
+}
+
+.blob {
+  height: 361px; /* Juster størrelsen på blobs */
+  width: 351px;
+  background-image: url('@/assets/blob.svg');
+  background-size: cover; /* Sørger for, at billedet fylder hele containeren */
+  background-position: center; /* Centrerer billedet */
+  background-repeat: no-repeat;
+}
+
+/* ------------------------------------------- ABOUT SECTION --------------------------------------------*/
+
+
+.section-abouttitle {
+  font-size: 54px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  border-bottom: 3px solid var(--color-white);
+  width: 85%;
+}
+
+.about-content {
+  display: flex; /* Placerer imgContainer og blobContainer ved siden af hinanden */
+  align-items: center; /* Justerer dem vertikalt */
+  gap: 70px; /* Tilføjer mellemrum mellem de to containere */
+  margin-bottom: 55px;
+}
+
+.imgContainer {
+  height: 452px;
+  width: 331px;
+  background-image: url('@/assets/pictureOfMe.jpg');
+  background-size: cover; /* Sørger for, at billedet fylder hele containeren */
+  background-position: center; /* Centrerer billedet i containeren */
+  background-repeat: no-repeat;
+  margin-left: 240px;
+}
+
+.blobContainer {
+  height: 450px;
+  width: 650px;
+  background-image: url('@/assets/textboxblob.svg');
+  background-size: contain; /* Sørger for, at billedet fylder hele containeren */
+  background-position: center; /* Centrerer billedet i containeren */
+  background-repeat: no-repeat;
+  display: flex; /* Sørger for, at tekst kan placeres inde i blobContainer */
+  align-items: center; /* Centrerer teksten vertikalt */
+  justify-content: center; /* Centrerer teksten horisontalt */
+  padding: 20px; /* Tilføjer lidt indre afstand til teksten */
+}
+
+.textContainer {
+  text-align: center; /* Centrerer teksten inde i blobContainer */
+  color: white; /* Sørger for, at teksten er læsbar */
+  font-size: 20px;
+}
+
+/* ------------------------------------------- CV AND BUSINESS CARD SECTION --------------------------------------------*/
+
+
+.lineonly {
+  border-bottom: 3px solid var(--color-white);
+  width: 85%; 
+  margin: 0 auto; /* Centrerer stregen horisontalt */
+  margin-bottom: 55px;
+}
+
+
 </style>

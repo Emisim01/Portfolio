@@ -3,15 +3,15 @@
 
 @theme {
 --color-brigth-bluey:#C5C8F5;
---color-very-blue: #132E8E;
---color-blob-blue-light: #1C6BC5;
+--color-very-bluey: #132E8E;
+--color-blob-bluey-light: #1C6BC5;
 --color-medium-blueybluey: #4BA0EA;
 --color-purplebluey: #B0B8F5;
 
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 100%;
 }
 
 a,

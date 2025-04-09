@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue'
+import Footer from '@/components/Footer.vue'
 
 </script>
 
@@ -14,6 +15,7 @@ import NavBar from '@/components/NavBar.vue'
   </header>
 
   <RouterView />
+  <Footer />
 </template>
 
 <style scoped>
@@ -53,6 +55,8 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+
+
 
 @media (min-width: 1024px) {
   header {
