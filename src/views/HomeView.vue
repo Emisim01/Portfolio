@@ -47,7 +47,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   </div>
   </main>
 
-  <section class="card-section">
+  <section id="projects" class="card-section">
     <p class="section-title text-very-bluey font-bold uppercase pt-15 ">Projects</p>
   <div class="blob-row">
     <div class="blob">
@@ -75,7 +75,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
   </section>
 
-  <section class="about-section">
+  <section  id="about" class="about-section">
 
     <p class="section-abouttitle text-very-bluey font-bold uppercase ">About me</p>
   
@@ -111,7 +111,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   <div class="lineonly"></div>
 </section>
 
-<section class="last-section">
+<section id="contact" class="contact-section">
   <div class="blob-row">
     <div class="blob">
       <router-link to="/CV" class="blob-text uppercase">CV</router-link>

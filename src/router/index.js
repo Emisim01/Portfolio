@@ -15,6 +15,7 @@ import Illustration2 from '@/views/Illustration2View.vue'
 import Illustration3 from '@/views/Illustration3View.vue'
 import Illustration4 from '@/views/Illustration4View.vue'
 
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -94,7 +95,23 @@ const router = createRouter({
     component: Illustration4
   },
 
+
   ],
+
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth', // Gør scrollingen glidende
+      }
+    } else if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  },
+
 })
+
 
 export default router

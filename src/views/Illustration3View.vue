@@ -4,7 +4,7 @@
         <div class="imgContainer illustration3" @click="openLightbox"></div> <!-- Unik klasse -->
     
         <div class="illustrationTextContainer">
-          <div class="textContainer">
+          <div class="textContainerIllustration3">
             <p class="text-white font-bold">LIVE LAUGH LOVE!</p>
             <p class="text-white px-10">
               I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
@@ -17,16 +17,14 @@
     
       <!-- Lightbox -->
       <div v-if="isLightboxOpen" class="lightbox" @click="closeLightbox">
-        <img src="@/assets/livelaughlove.png" alt="Ramen Illustration" />
+        <img src="@/assets/livelaughlove.png" alt="LiveLaughLove Illustration" />
       </div>
     
     <div class="pageNav">
       <ul class="inline-flex -space-x-px text-base h-10">
+        
         <li>
-            <router-link to="/previous" class="pageNavText flex items-center justify-center px-4 h-10 ms-0  bg-very-bluey  rounded-s-lg hover:bg-medium-blueybluey">Previous</router-link>
-        </li>
-        <li>
-            <router-link to="/illustration1" class="pageNavText flex items-center justify-center px-4 h-10  bg-very-bluey hover:bg-medium-blueybluey">1</router-link>
+          <router-link to="/illustration1" class="pageNavText flex items-center justify-center px-4 h-10  bg-very-bluey rounded-s-lg hover:bg-medium-blueybluey">1</router-link>
         </li>
         <li>
             <router-link to="/illustration2" class="pageNavText flex items-center justify-center px-4 h-10  bg-very-bluey hover:bg-medium-blueybluey">2</router-link>
@@ -36,11 +34,9 @@
             <router-link to="/illustration2" aria-current="page" class="pageNavText flex items-center justify-center px-4 h-10 border border-gray-300 bg-very-bluey hover:bg-medium-blueybluey">3</router-link>
         </li>
         <li>
-            <router-link to="/illustration4" class="pageNavText flex items-center justify-center px-4 h-10  bg-very-bluey hover:bg-medium-blueybluey">4</router-link>
+          <router-link to="/illustration4" class="pageNavText flex items-center justify-center px-4 h-10  bg-very-bluey rounded-e-lg hover:bg-medium-blueybluey">4</router-link>
         </li>
-        <li>
-            <router-link to="/next" class="pageNavText flex items-center justify-center px-4 h-10 bg-very-bluey rounded-e-lg hover:bg-medium-blueybluey">Next</router-link>
-        </li>
+      
       </ul>
     </div>
     
@@ -127,7 +123,7 @@
       padding: 20px; /* Tilføjer lidt indre afstand til teksten */
     }
     
-    .textContainer {
+    .textContainerIllustration3 {
       text-align: center; /* Centrerer teksten inde i blobContainer */
       color: white; /* Sørger for, at teksten er læsbar */
       font-size: 20px;
