@@ -11,6 +11,10 @@ import FrontendDevelopment from '@/views/FrontenddevView.vue'
 import Exams from '@/views/ExamsView.vue'
 import Production from '@/views/ProductionView.vue'
 
+import Illustration2 from '@/views/Illustration2View.vue'
+import Illustration3 from '@/views/Illustration3View.vue'
+import Illustration4 from '@/views/Illustration4View.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -72,7 +76,24 @@ const router = createRouter({
       path: '/production',
       name: 'Production',
       component: Production
-    }
+    },
+
+
+  { path: '/illustration2',
+    name: 'illustration2',
+    component: Illustration2
+  },
+
+  { path: '/illustration3',
+    name: 'illustration3',
+    component: Illustration3
+  },
+
+  { path: '/illustration4',
+    name: 'illustration4',
+    component: Illustration4
+  },
+
   ],
 })
 
