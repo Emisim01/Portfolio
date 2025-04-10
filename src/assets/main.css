@@ -1,5 +1,9 @@
 @import './base.css';
 @import "tailwindcss";
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url(../assets/PlusJakartaSans.ttf);
+}
 
 @theme {
 --color-brigth-bluey:#C5C8F5;

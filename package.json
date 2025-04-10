@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.1",
+    "anime": "^0.1.2",
+    "animejs": "^4.0.1",
+    "firebase": "^11.6.0",
     "tailwindcss": "^4.1.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"

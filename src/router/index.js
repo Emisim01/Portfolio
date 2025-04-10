@@ -4,16 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import ProjectsView from '@/views/ProjectsView.vue'
 import ContactView from '@/views/ContactView.vue'
 
-import Illustrations from '@/views/IllustrationsView.vue'
-import Pictures from '@/views/PicturesView.vue'
-import UX from '@/views/UxView.vue'
-import FrontendDevelopment from '@/views/FrontenddevView.vue'
-import Exams from '@/views/ExamsView.vue'
-import Production from '@/views/ProductionView.vue'
 
-import Illustration2 from '@/views/Illustration2View.vue'
-import Illustration3 from '@/views/Illustration3View.vue'
-import Illustration4 from '@/views/Illustration4View.vue'
 
 
 const router = createRouter({
@@ -46,53 +37,53 @@ const router = createRouter({
     {
       path: '/illustrations',
       name: 'Illustrations',
-      component: Illustrations
+      component: () => import('@/views/IllustrationsView.vue')
     },
 
     {
       path: '/pictures',
       name: 'Pictures',
-      component: Pictures
+      component: () => import('@/views/PicturesView.vue')
     },
 
     {
       path: '/ux',
       name: 'UX',
-      component: UX
+      component: () => import('@/views/UxView.vue')
     },
 
     {
       path: '/frontend development',
       name: 'FrontendDevelopment',
-      component: FrontendDevelopment
+      component: () => import('@/views/FrontenddevView.vue')
     },
 
     {
       path: '/exams',
       name: 'Exams',
-      component: Exams
+      component: () => import('@/views/ExamsView.vue')
     },
 
     {
       path: '/production',
       name: 'Production',
-      component: Production
+      component: () => import('@/views/ProductionView.vue')
     },
 
 
   { path: '/illustration2',
     name: 'illustration2',
-    component: Illustration2
+    component: () => import('@/views/Illustration2View.vue')
   },
 
   { path: '/illustration3',
     name: 'illustration3',
-    component: Illustration3
+    component: () => import('@/views/Illustration3View.vue')
   },
 
   { path: '/illustration4',
     name: 'illustration4',
-    component: Illustration4
+    component: () => import('@/views/Illustration4View.vue')
   },
 
 

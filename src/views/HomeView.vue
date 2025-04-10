@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
+
 const marqueeText = ref(' EMILIE STRYHN SIMONSEN ')
 
 const marqueeText2 = ref(' PORTFOLIO ')
@@ -9,9 +10,11 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 </script>
 <template>
+
   <main class="hero-wrapper">
     <div class="hero">
 
+  
   
     <p class="marquee pb-5">
       <span class="text-white text-6xl font-bold pb-5 rolltextOne">
@@ -48,7 +51,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   </main>
 
   <section id="projects" class="card-section">
-    <p class="section-title text-very-bluey font-bold uppercase pt-15 ">Projects</p>
+    <p class="section-title text-very-bluey font-bold uppercase pt-7 ">Projects</p>
   <div class="blob-row">
     <div class="blob">
       <router-link to="/illustrations" class="blob-text1 uppercase">Illustrations</router-link>
@@ -69,7 +72,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
       <router-link to="/exams" class="blob-text uppercase">Exams</router-link>
     </div>
     <div class="blob">
-      <router-link to="/production" class="blob-text uppercase">Video Production</router-link>
+      <router-link to="/production" class="blob-text uppercase">Production</router-link>
     </div>
   </div>
 
@@ -80,12 +83,11 @@ const marqueeText2 = ref(' PORTFOLIO ')
     <p class="section-abouttitle text-very-bluey font-bold uppercase ">About me</p>
   
     <div class="about-content">
-    <div class="imgContainer"></div>
+    <div class="imgContainer "></div>
 
-    <div class="blobContainer">
+    <div class="blobContainer ">
       <div class="textContainer">
-        <p class=" text-white font-bold">
-                HI!        </p>
+        <p class=" text-white font-bold"> HI!</p>
         <p class=" text-white px-10">
           I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
           and I love expressing myself through my work. My portfolio is a reflection of that passion—and
@@ -114,11 +116,11 @@ const marqueeText2 = ref(' PORTFOLIO ')
 <section id="contact" class="contact-section">
   <div class="blob-row">
     <div class="blob">
-      <router-link to="/CV" class="blob-text uppercase">CV</router-link>
+      <a href="/assets/pdf/MyCV.pdf" class="blob-text uppercase">Download: CV</a>
 
     </div>
     <div class="blob">
-      <router-link to="/business card" class="blob-text uppercase">Business card</router-link>
+      <a href="/assets/pdf/businessKort.pdf" class="blob-text uppercase">Download: Business card</a>
 
     </div>
   </div>
@@ -162,6 +164,8 @@ const marqueeText2 = ref(' PORTFOLIO ')
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  font-family: 'PlusJakartaSans';
+
 }
 
 .marquee span {
@@ -169,11 +173,15 @@ const marqueeText2 = ref(' PORTFOLIO ')
   animation: marquee 10s linear infinite;
   white-space: nowrap;
   margin-top: 300px;
+  font-family: 'PlusJakartaSans';
+
 }
 
 .marquee2 span {
   animation-delay: 0s;
   margin-top: 0;
+  font-family: 'PlusJakartaSans';
+
 }
 
 @keyframes marquee {
@@ -194,6 +202,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   margin-bottom: 55px;
   border-bottom: 3px solid var(--color-white);
   width: 85%;
+  font-family: 'PlusJakartaSans';
 
 }
 
@@ -201,17 +210,17 @@ const marqueeText2 = ref(' PORTFOLIO ')
   display: flex;
   flex-direction: column;
   align-items: center; /* Centrerer indholdet horisontalt */
-  gap: 20px; /* Tilføjer mellemrum mellem overskriften og blobs */
+  gap: 20px; 
 }
 
 .blob-row {
-  display: flex; /* Placerer blobs på en række */
+  display: flex; 
   justify-content: center; /* Centrerer blobs horisontalt */
-  gap: 20px; /* Tilføjer mellemrum mellem blobs */
+  gap: 20px; 
 }
 
 .blob {
-  height: 361px; /* Juster størrelsen på blobs */
+  height: 361px; 
   width: 351px;
   background-image: url('@/assets/blob.svg');
   background-size: cover; /* Sørger for, at billedet fylder hele containeren */
@@ -222,32 +231,39 @@ const marqueeText2 = ref(' PORTFOLIO ')
   align-items: center; /* Centrerer teksten vertikalt */
   text-align: center; /* Sørger for, at teksten er centreret */
   color: white; /* Gør teksten synlig */
-  font-size: 16px; /* Juster tekststørrelsen */
-  font-weight: bold; /* Gør teksten fed */
+  font-size: 16px;
+  font-weight: bold; 
   margin-bottom: 55px;
 }
 
 .blob-text {
-  text-decoration: none; /* Fjerner understregning */
-  color: white; /* Beholder teksten hvid */
+  text-decoration: none;
+  color: white; 
   font-weight: bold;
-  font-size: 28px;
+  font-size: 23px;
+  font-family: 'PlusJakartaSans';
 }
 
 .blob-text:hover {
-  font-size: 32px;
+  font-size: 28px;
+  font-family: 'PlusJakartaSans';
+
 }
 
 .blob-text1 {
-  text-decoration: none; /* Fjerner understregning */
-  color: white; /* Beholder teksten hvid */
+  text-decoration: none; 
+  color: white; 
   font-weight: bold;
-  font-size: 28px;
+  font-size: 23px;
   padding-right: 75px;
+  font-family: 'PlusJakartaSans';
+
 }
 
 .blob-text1:hover {
-  font-size: 32px;
+  font-size: 28px;
+  font-family: 'PlusJakartaSans';
+
 }
 /* ------------------------------------------- ABOUT SECTION --------------------------------------------*/
 
@@ -259,12 +275,14 @@ const marqueeText2 = ref(' PORTFOLIO ')
   margin-bottom: 55px;
   border-bottom: 3px solid var(--color-white);
   width: 85%;
+  font-family: 'PlusJakartaSans';
+
 }
 
 .about-content {
-  display: flex; /* Placerer imgContainer og blobContainer ved siden af hinanden */
-  align-items: center; /* Justerer dem vertikalt */
-  gap: 70px; /* Tilføjer mellemrum mellem de to containere */
+  display: flex; 
+  align-items: center;
+  gap: 70px; 
   margin-bottom: 55px;
 }
 
@@ -295,24 +313,26 @@ const marqueeText2 = ref(' PORTFOLIO ')
   text-align: center; /* Centrerer teksten inde i blobContainer */
   color: white; /* Sørger for, at teksten er læsbar */
   font-size: 20px;
+  font-family: 'PlusJakartaSans';
+
 }
 
 /* ------------------------------------------- VIDEO CV --------------------------------------------*/
 
 
 .vidCV {
-  max-width: 1000px; /* Maksimal bredde */
-  aspect-ratio: 16 / 9; /* Sørger for, at videoen har det rigtige format */
+  max-width: 1000px; 
+  aspect-ratio: 16 / 9; 
   margin: 0 auto; /* Centrerer videoen horisontalt */
-  border: 3px solid var(--color-white); /* Tilføjer en kant */
-  border-radius: 5px; /* Gør hjørnerne runde */
+  border: 3px solid var(--color-white); 
+  border-radius: 5px; 
   margin-bottom: 55px;
  
 }
 
 .vidCV iframe {
-  width: 100%; /* Sørger for, at videoen fylder hele containeren */
-  height: 100%; /* Sørger for, at videoen fylder hele containeren */
+  width: 100%;
+  height: 100%; 
 }
 
 /* ------------------------------------------- CV AND BUSINESS CARD SECTION --------------------------------------------*/

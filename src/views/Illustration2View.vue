@@ -24,7 +24,7 @@
       <ul class="inline-flex -space-x-px text-base h-10">
       
         <li>
-            <router-link to="/illustration1" class="pageNavText flex items-center justify-center px-4 h-10  bg-very-bluey rounded-s-lg hover:bg-medium-blueybluey">1</router-link>
+            <router-link to="/illustrations" class="pageNavText flex items-center justify-center px-4 h-10  bg-very-bluey rounded-s-lg hover:bg-medium-blueybluey">1</router-link>
         </li>
         <li>
             <router-link to="/illustration2" aria-current="page" class="pageNavText flex items-center justify-center px-4 h-10 border border-gray-300 bg-very-bluey hover:bg-medium-blueybluey">2</router-link>

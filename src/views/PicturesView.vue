@@ -107,6 +107,8 @@
       text-align: center; /* Centrerer teksten inde i blobContainer */
       color: white; /* Sørger for, at teksten er læsbar */
       font-size: 20px;
+      font-family: 'PlusJakartaSans';
+
     }
     
     .lightbox {

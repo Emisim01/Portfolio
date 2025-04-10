@@ -36,20 +36,28 @@ nav {
   text-align: center;
   background-color: #132E8E;
   height: 90px;
+  font-family: 'PlusJakartaSans';
+
 }
 
 nav a.router-link-exact-active {
   color: var(--color-text);
+  font-family: 'PlusJakartaSans';
+
 }
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
+  font-family: 'PlusJakartaSans';
+
 }
 
 nav a {
   display: inline-block;
   /* padding: 0 1rem; */
   border-left: 1px solid var(--color-border);
+  font-family: 'PlusJakartaSans';
+
 }
 
 nav a:first-of-type {

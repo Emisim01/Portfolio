@@ -5,12 +5,8 @@
 
     <div class="illustrationTextContainer">
       <div class="textContainerIllustration1">
-        <p class="text-white font-bold">HI!</p>
-        <p class="text-white px-10">
-          I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
-          and I love expressing myself through my work. My portfolio is a reflection of that passion—and
-          I hope you feel inspired and connected as you explore it.
-        </p>
+        <p class="text-white font-bold">DISCO POSTER!</p>
+        <p class="text-white px-10"> This is my own protject. I wanted to </p>
       </div>
     </div>
   </div>
@@ -65,21 +61,35 @@ function closeLightbox() {
   align-items: center; /* Centrerer vertikalt */
   color: white;
   margin: 55px 0;
+  font-family: 'PlusJakartaSans';
+
 }
 
 
 .pageNavText:hover {
   color: white;
   text-decoration: none;
+  font-family: 'PlusJakartaSans';
+  font-family: 'PlusJakartaSans';
+
 }
 
 .illustration1 {
-  background-image: url('@/assets/disco.png');
-}
+      background-image: url('@/assets/disco.png');
+    }
+    
+    .illustration2 {
+      background-image: url('@/assets/Ramenposter.png');
+    }
 
-.illustration2 {
-  background-image: url('@/assets/Ramenposter.png');
+    .illustration3 {
+  background-image: url('@/assets/livelaughlove.png');
 }
+       
+    .illustration4 {
+      background-image: url('@/assets/internationalday.png');
+    }
+    
 
 .illustration {
   display: flex; /* Placerer imgContainer og blobContainer ved siden af hinanden */

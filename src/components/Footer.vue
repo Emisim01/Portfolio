@@ -2,8 +2,8 @@
     <footer class="bg-very-bluey text-white py-6 px-30">
       <div class="footer-container">
         <div class="text-container">
-          <p class="text-xl uppercase font-bold pb-2">Emilie Stryhn Simonsen</p>
-          <div class="pb-2">
+          <p class="navnBox text-xl uppercase font-bold pb-2">Emilie Stryhn Simonsen</p>
+          <div class="navnBox pb-2">
             <p>tlf: +45 60 54 16 59</p>
             </div> 
             <div>
@@ -39,6 +39,10 @@
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
   background-position: center; /* Centrerer billedet i containeren */
   background-repeat: no-repeat;
+}
+
+.navnBox {
+  font-family: 'PlusJakartaSans';
 }
 
   </style>
