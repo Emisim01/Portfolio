@@ -1,8 +1,15 @@
 @import './base.css';
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @font-face {
   font-family: 'PlusJakartaSans';
   src: url(../assets/PlusJakartaSans.ttf);
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src: url(../assets/MerriweatherSans.ttf);
 }
 
 @theme {

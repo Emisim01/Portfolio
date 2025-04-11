@@ -164,7 +164,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   white-space: nowrap;
   overflow: hidden;
   position: relative;
-  font-family: 'PlusJakartaSans';
+  font-family: 'MerriweatherSans';
 
 }
 
@@ -173,14 +173,14 @@ const marqueeText2 = ref(' PORTFOLIO ')
   animation: marquee 10s linear infinite;
   white-space: nowrap;
   margin-top: 300px;
-  font-family: 'PlusJakartaSans';
+  font-family: 'MerriweatherSans';
 
 }
 
 .marquee2 span {
   animation-delay: 0s;
   margin-top: 0;
-  font-family: 'PlusJakartaSans';
+  font-family: 'MerriweatherSans';
 
 }
 
@@ -202,8 +202,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   margin-bottom: 55px;
   border-bottom: 3px solid var(--color-white);
   width: 85%;
-  font-family: 'PlusJakartaSans';
-
+  font-family: 'MerriweatherSans';
 }
 
 .card-section {
@@ -275,7 +274,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   margin-bottom: 55px;
   border-bottom: 3px solid var(--color-white);
   width: 85%;
-  font-family: 'PlusJakartaSans';
+  font-family: 'MerriweatherSans';
 
 }
 
@@ -324,7 +323,6 @@ const marqueeText2 = ref(' PORTFOLIO ')
   max-width: 1000px; 
   aspect-ratio: 16 / 9; 
   margin: 0 auto; /* Centrerer videoen horisontalt */
-  border: 3px solid var(--color-white); 
   border-radius: 5px; 
   margin-bottom: 55px;
  
