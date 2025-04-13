@@ -3,7 +3,7 @@
       <div class="footer-container">
         <div class="text-container">
           <p class="navnBox text-xl uppercase font-bold pb-2">Emilie Stryhn Simonsen</p>
-          <div class="navnBox pb-2">
+          <div class="navnBox2 pb-2">
             <p>tlf: +45 60 54 16 59</p>
             </div> 
             <div>
@@ -43,6 +43,43 @@
 
 .navnBox {
   font-family: 'PlusJakartaSans';
+}
+
+.navnBox2 {
+  font-family: 'PlusJakartaSans';
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Skift til kolonnevisning */
+    align-items: center; /* Centrerer elementerne horisontalt */
+    text-align: center; /* Centrerer teksten */
+  }
+
+  .navnBox {
+    margin-bottom: 10px; /* Tilføj lidt afstand mellem navn og kontaktoplysninger */
+  }
+
+  .qrCode {
+    height: 90px; /* Reducer størrelsen på QR-koden */
+    width: 90px;
+    margin-top: 15px;
+    }
+  
+  .navnBox2 {
+    font-size: 14px; /* Reducer tekststørrelsen */
+  }
+
+  .navnBox2 {
+    font-size: 14px; /* Reducer tekststørrelsen */
+  }
+
+  .text-container p {
+    font-size: 12px; /* Reducer tekststørrelsen for mindre skærme */
+  }
+
 }
 
   </style>

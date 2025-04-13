@@ -150,7 +150,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 }
 
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 750px;
   background-image: url('@/assets/hero.png');
   background-size: cover;
@@ -225,11 +225,11 @@ const marqueeText2 = ref(' PORTFOLIO ')
   background-size: cover; /* Sørger for, at billedet fylder hele containeren */
   background-position: center; /* Centrerer billedet */
   background-repeat: no-repeat;
-  display: flex; /* Gør det muligt at centrere teksten */
+  display: flex; 
   justify-content: center; /* Centrerer teksten horisontalt */
   align-items: center; /* Centrerer teksten vertikalt */
   text-align: center; /* Sørger for, at teksten er centreret */
-  color: white; /* Gør teksten synlig */
+  color: white; 
   font-size: 16px;
   font-weight: bold; 
   margin-bottom: 55px;
@@ -288,8 +288,8 @@ const marqueeText2 = ref(' PORTFOLIO ')
 .imgContainer {
   height: 452px;
   width: 331px;
-  background-image: url('@/assets/pictureOfMe.jpg');
-  background-size: cover; /* Sørger for, at billedet fylder hele containeren */
+  background-image: url('@/assets/ikkligenu.jpg');
+  background-size: contain; /* Sørger for, at billedet fylder hele containeren */
   background-position: center; /* Centrerer billedet i containeren */
   background-repeat: no-repeat;
   margin-left: 240px;
@@ -325,6 +325,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   margin: 0 auto; /* Centrerer videoen horisontalt */
   border-radius: 5px; 
   margin-bottom: 55px;
+  border: 3px solid var(--color-white);
  
 }
 
@@ -341,6 +342,67 @@ const marqueeText2 = ref(' PORTFOLIO ')
   width: 85%; 
   margin: 0 auto; /* Centrerer stregen horisontalt */
   margin-bottom: 55px;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px; /* Reducer højden */
+  }
+
+  .marquee2 {
+    font-size: 30px;
+
+  }
+  .marquee span {
+    font-size: 30px;
+    margin-top: 68px; 
+  }
+
+  .blob-row {
+    flex-direction: column; /* Skift til kolonnevisning */
+    align-items: center;
+  }
+
+  .blob {
+    height: 300px; 
+    width: 290px; 
+  }
+
+  .blob-text, .blob-text1 {
+    font-size: 20px; 
+  }
+
+  .blob-text:hover, .blob-text1:hover {
+    font-size: 25px; 
+  }
+
+  .section-title {
+    font-size: 45px; 
+  }
+
+  .section-abouttitle {
+    font-size: 45px; 
+  }
+
+  .about-content {
+    flex-direction: column; /* Skift til kolonnevisning */
+    gap: 20px; /* Reducer mellemrum */
+  }
+
+  .imgContainer {
+ display:none;
+  }
+
+  .blobContainer {
+    width: 354px; 
+    height: 254px; 
+  }
+
+  .textContainer {
+    font-size: 13px; 
+    padding: 3px 0;
+  }
 }
 
 

@@ -54,7 +54,6 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  /* padding: 0 1rem; */
   border-left: 1px solid var(--color-border);
   font-family: 'MerriweatherSans';
 
@@ -64,22 +63,24 @@ nav a:first-of-type {
   border: 0;
 }
 
-
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    /* padding-right: calc(var(--section-gap) / 2); */
+/* Skærme under 768px (tablets og mindre) */
+@media (max-width: 768px) {
+  nav {
+    font-size: 20px; /* Reducer fontstørrelsen */
+    height: auto; /* Fjern fast højde */
   }
 
-  /* nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
+  nav a {
+    display: block; /* Placer links i en kolonne */
+    padding: 10px 0; /* Tilføj mellemrum mellem links */
+    border: 0; /* Fjern venstre kant */
+  }
 
-    padding: 1rem 0;
-    margin-top: 1rem;
-  } */
+  nav a.router-link-exact-active {
+    color: var(--color-text);
+    font-weight: bold; /* Fremhæv det aktive link */
+  }
 }
+
+
 </style>

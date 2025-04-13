@@ -7,7 +7,7 @@
           <div class="textContainerExam1">
             <p class="text-white font-bold">Our first exam project</p>
             <p class="text-white px-10"> This is my own protject. I wanted to </p>
-            <a href="https://lunadamm.github.io/plastic-webpage/" class="blob-text uppercase">https://lunadamm.github.io/plastic-webpage/</a>
+            <a href="https://lunadamm.github.io/plastic-webpage/" class="blob-text uppercase" target="_blank" >https://lunadamm.github.io/plastic-webpage/</a>
         </div>
         </div>
       </div>
@@ -16,7 +16,7 @@
     
       <!-- Lightbox -->
       <div v-if="isLightboxOpen" class="lightbox" @click="closeLightbox">
-        <img src="@/assets/wireframes.png" alt="First exam project" />
+        <img src="@/assets/website.png" alt="First exam project" />
       </div>
     
     <div class="pageNav">
@@ -68,7 +68,7 @@
     }
     
     .exam1 {
-          background-image: url('@/assets/wireframes.png');
+          background-image: url('@/assets/website.png');
         }
         
     
@@ -84,7 +84,7 @@
     .imgContainer {
       height: 452px;
       width: 331px;
-      background-image: url('@/assets/wireframes.png');
+      background-image: url('@/assets/website.png');
       background-size: cover; /* Sørger for, at billedet fylder hele containeren */
       background-position: center; /* Centrerer billedet i containeren */
       background-repeat: no-repeat;
