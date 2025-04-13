@@ -19,16 +19,6 @@ import Footer from '@/components/Footer.vue'
 </template>
 
 <style scoped>
-header {
-  width: 100vw;
-
-}
-
-.wrapper{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
 
 nav {
@@ -40,47 +30,25 @@ nav {
 
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-  font-family: 'MerriweatherSans';
 
-}
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-  font-family: 'MerriweatherSans';
 
-}
-
-nav a {
-  display: inline-block;
-  border-left: 1px solid var(--color-border);
-  font-family: 'MerriweatherSans';
-
-}
-
-nav a:first-of-type {
-  border: 0;
-}
 
 /* Skærme under 768px (tablets og mindre) */
-@media (max-width: 768px) {
-  nav {
-    font-size: 20px; /* Reducer fontstørrelsen */
-    height: auto; /* Fjern fast højde */
+ 
+  @media (max-width: 768px) {
+ 
+    nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 12px 0;
   }
 
-  nav a {
-    display: block; /* Placer links i en kolonne */
-    padding: 10px 0; /* Tilføj mellemrum mellem links */
-    border: 0; /* Fjern venstre kant */
-  }
 
-  nav a.router-link-exact-active {
-    color: var(--color-text);
-    font-weight: bold; /* Fremhæv det aktive link */
-  }
 }
+
+
 
 
 </style>

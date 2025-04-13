@@ -351,12 +351,12 @@ const marqueeText2 = ref(' PORTFOLIO ')
   }
 
   .marquee2 {
-    font-size: 30px;
 
   }
+
   .marquee span {
     font-size: 30px;
-    margin-top: 68px; 
+    margin: none;
   }
 
   .blob-row {
