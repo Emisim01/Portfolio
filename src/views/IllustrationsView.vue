@@ -101,14 +101,15 @@ function closeLightbox() {
 }
 
 .imgContainer {
-  height: 452px;
-  width: 331px;
+  width: 100%;
   background-image: url('@/assets/disco.png');
-  background-size: cover; /* Sørger for, at billedet fylder hele containeren */
+  background-size: contain; 
   background-position: center; /* Centrerer billedet i containeren */
   background-repeat: no-repeat;
-  margin-left: 240px;
+  margin-left: 10px;
   cursor: pointer; /* Gør det tydeligt, at billedet kan klikkes */
+  aspect-ratio: 4 / 3;
+  
 
 }
 
@@ -151,6 +152,47 @@ function closeLightbox() {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
   cursor: pointer; /* Gør det tydeligt, at billedet kan klikkes */
 }
+
+@media (max-width: 768px) {
+  .pageNav {
+    margin: 35px 0; 
+  }
+
+  .pageNavText {
+    font-size: 14px; 
+    padding: 25px;
+  }
+
+  .illustration {
+    flex-direction: column; /* Skift layout til en kolonnevisning */
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    width: 120%; /* Gør billedet fleksibelt og fylder næsten hele bredden */
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .illustrationTextContainer {
+    width: 90%; /* Gør tekstcontaineren fleksibel */
+    height: auto; /* Juster højden automatisk */
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .textContainerIllustration1 {
+    font-size: 16px; /* Reducer tekststørrelsen */
+    text-align: center; /* Bevar centreret tekst */
+  }
+
+  .lightbox img {
+    max-width: 80%; /* Reducer billedets bredde i lightbox */
+    max-height: 80%; /* Reducer billedets højde i lightbox */
+  }
+
+}
+
 
 
 </style>
