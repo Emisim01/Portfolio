@@ -1,16 +1,19 @@
 <template>
 
-    <div class="illustration">
+<div class="illustration">
         <div class="imgContainer illustration3" @click="openLightbox"></div> <!-- Unik klasse -->
     
         <div class="illustrationTextContainer">
           <div class="textContainerIllustration3">
-            <p class="text-white font-bold">LIVE LAUGH LOVE!</p>
-            <p class="text-white px-10">
-              I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
-              and I love expressing myself through my work. My portfolio is a reflection of that passion—and
-              I hope you feel inspired and connected as you explore it.
+            <p class="overskrift text-white font-bold text-3xl items-center">LIVE LAUGH LOVE!</p> 
+            <p class="mainText text-white px-10">
+              This is my own project – not a school project. 
+              This is just a quick illustration I made for fun, but still challenged myself
+              and my skills. It's a playful take on the classic "Live Laugh Love" phrase,
+              combining a lighthearted design with a touch of humor.
+
             </p>
+       
           </div>
         </div>
       </div>
@@ -108,6 +111,8 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  margin-left: 240px;
+
 }
     
     .illustrationTextContainer {
@@ -124,12 +129,130 @@
     }
     
     .textContainerIllustration3 {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
       color: white; /* Sørger for, at teksten er læsbar */
       font-size: 20px;
     }
-    
 
+    .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      padding-bottom: 10px;
+    }
+
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Mørk baggrund */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Sørger for, at den er øverst */
+}
+
+.lightbox img {
+  max-width: 90%; /* Sørger for, at billedet ikke fylder hele skærmen */
+  max-height: 90%; /* Sørger for, at billedet ikke går uden for skærmen */
+  border-radius: 2px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  cursor: pointer; 
+}
+    
+    @media (max-width: 468px) {
+  .pageNav {
+    margin: 35px 0; 
+  }
+
+  .pageNavText {
+    font-size: 14px; 
+    padding: 25px;
+  }
+
+  .illustration {
+    flex-direction: column;
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .textContainerIllustration3 {
+    font-size: 16px;    
+  }
+
+  .illustration {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; 
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; 
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
+    padding: 0 129px;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+
+
+}
+
+@media (max-width: 1260px){
+  .illustration {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+ 
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
+    text-align: center; /* Bevar centreret tekst */
+    padding: 0 130px;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+}
     
     
     </style>

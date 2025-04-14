@@ -5,12 +5,13 @@
     
         <div class="illustrationTextContainer">
           <div class="textContainerIllustration2">
-            <p class="text-white font-bold">RAMEN!</p>
-            <p class="text-white px-10">
-              I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
-              and I love expressing myself through my work. My portfolio is a reflection of that passion—and
-              I hope you feel inspired and connected as you explore it.
+            <p class="overskrift text-white font-bold text-3xl items-center">RAMEN POSTER!</p> 
+            <p class="mainText text-white px-10">
+              This is my own project - not a school project. I wanted to create a poster that would be eye-catching and fun.
+              I used bright colors and playful typography to achieve this.
+              The ramen bowl is a nod to my love of Japanese culture and cuisine. This is one of my first projects on my own.
             </p>
+       
           </div>
         </div>
       </div>
@@ -66,13 +67,19 @@
       align-items: center; /* Centrerer vertikalt */
       color: white;
       margin: 55px 0;
+      font-family: 'PlusJakartaSans';
+
     }
     
     
     .pageNavText:hover {
       color: white;
       text-decoration: none;
+      font-family: 'PlusJakartaSans';
+
     }
+
+  
 
     .illustration1 {
   background-image: url('@/assets/disco.png');
@@ -81,11 +88,19 @@
 .illustration2 {
   background-image: url('@/assets/Ramenposter.png');
 }
+
+.illustration3 {
+  background-image: url('@/assets/livelaughlove.png');
+}
+       
+.illustration4 {
+  background-image: url('@/assets/internationalday.png');
+}
     
     .illustration {
       display: flex; /* Placerer imgContainer og blobContainer ved siden af hinanden */
       align-items: center; /* Justerer dem vertikalt */
-      gap: 70px; /* Tilføjer mellemrum mellem de to containere */
+      gap: 70px;
       margin-bottom: 55px;
       margin-top: 55px;
     
@@ -98,6 +113,8 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  margin-left: 240px;
+
 }
     
     .illustrationTextContainer {
@@ -114,11 +131,138 @@
     }
     
     .textContainerIllustration2 {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
       color: white; /* Sørger for, at teksten er læsbar */
       font-size: 20px;
     }
+
+    .overskrift {
+      text-align: center;
+      padding-bottom: 10px;
+
+    }
+
+
+    .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); /* Mørk baggrund */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Sørger for, at den er øverst */
+}
+
+.lightbox img {
+  max-width: 90%; /* Sørger for, at billedet ikke fylder hele skærmen */
+  max-height: 90%; /* Sørger for, at billedet ikke går uden for skærmen */
+  border-radius: 2px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  cursor: pointer; 
+}
     
+    @media (max-width: 468px) {
+  .pageNav {
+    margin: 35px 0; 
+  }
+
+  .pageNavText {
+    font-size: 14px; 
+    padding: 25px;
+  }
+
+  .illustration {
+    flex-direction: column;
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; 
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; 
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .textContainerIllustration2 {
+    font-size: 16px; 
+    text-align: center; 
+  }
+
+
+  .illustration {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; 
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; 
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
+    text-align: center; /* Bevar centreret tekst */
+    padding: 0 129px;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+
+
+
+}
+
+@media (max-width: 1260px){
+  .illustration {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; 
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; 
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
+    text-align: center; /* Bevar centreret tekst */
+    padding: 0 130px;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+
+
+}
+
+
 
     
     

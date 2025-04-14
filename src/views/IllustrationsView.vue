@@ -1,15 +1,22 @@
 <template>
 
 <div class="illustration">
-    <div class="imgContainer illustration1" @click="openLightbox"></div> <!-- Unik klasse -->
+        <div class="imgContainer illustration1" @click="openLightbox"></div> <!-- Unik klasse -->
+    
+        <div class="illustrationTextContainer">
+          <div class="textContainerIllustration1">
+            <p class="overskrift text-white font-bold text-3xl items-center">CHERRY DISCO POSTER!</p> 
+            <p class="mainText text-white px-10">
+              This is my own project – not a school project. 
+              I wanted to challenge myself and try a new technique with the discoballs. 
+              I combined a playful cherry motif with a disco-inspired texture to give it a retro-fun vibe. 
+              The pattern is meant to feel cheerful and visually dynamic.
 
-    <div class="illustrationTextContainer">
-      <div class="textContainerIllustration1">
-        <p class="text-white font-bold">DISCO POSTER!</p>
-        <p class="text-white px-10"> This is my own protject. I wanted to </p>
+            </p>
+       
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
   <!-- Lightbox -->
   <div v-if="isLightboxOpen" class="lightbox" @click="closeLightbox">
@@ -70,7 +77,6 @@ function closeLightbox() {
   color: white;
   text-decoration: none;
   font-family: 'PlusJakartaSans';
-  font-family: 'PlusJakartaSans';
 
 }
 
@@ -101,14 +107,13 @@ function closeLightbox() {
 }
 
 .imgContainer {
-  width: 100%;
-  background-image: url('@/assets/disco.png');
-  background-size: contain; 
-  background-position: center; /* Centrerer billedet i containeren */
+  height: 452px;
+  width: 331px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  margin-left: 10px;
-  cursor: pointer; /* Gør det tydeligt, at billedet kan klikkes */
-  aspect-ratio: 4 / 3;
+  cursor: pointer;
+  margin-left: 240px;
   
 
 }
@@ -127,10 +132,15 @@ function closeLightbox() {
 }
 
 .textContainerIllustration1 {
-  text-align: center; /* Centrerer teksten inde i blobContainer */
   color: white; /* Sørger for, at teksten er læsbar */
   font-size: 20px;
+  
 }
+
+.overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      padding-bottom: 10px;
+    }
 
 .lightbox {
   position: fixed;
@@ -150,10 +160,10 @@ function closeLightbox() {
   max-height: 90%; /* Sørger for, at billedet ikke går uden for skærmen */
   border-radius: 2px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-  cursor: pointer; /* Gør det tydeligt, at billedet kan klikkes */
+  cursor: pointer; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   .pageNav {
     margin: 35px 0; 
   }
@@ -164,33 +174,88 @@ function closeLightbox() {
   }
 
   .illustration {
-    flex-direction: column; /* Skift layout til en kolonnevisning */
+    flex-direction: column;
     gap: 20px; 
     margin: 20px 0; 
   }
 
   .imgContainer {
-    width: 120%; /* Gør billedet fleksibelt og fylder næsten hele bredden */
     margin-left: 0; /* Fjern venstre margin */
   }
 
   .illustrationTextContainer {
-    width: 90%; /* Gør tekstcontaineren fleksibel */
-    height: auto; /* Juster højden automatisk */
+    height: 289px;
+    width: 650px;
     padding: 15px; /* Reducer padding */
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
   .textContainerIllustration1 {
-    font-size: 16px; /* Reducer tekststørrelsen */
+    font-size: 16px; 
+
+  }
+
+  .illustration {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; 
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; 
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
+    padding: 0 129px;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+
+
+}
+
+@media (max-width: 1260px){
+  .illustration {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .illustrationTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
     text-align: center; /* Bevar centreret tekst */
+    padding: 0 130px;
+
   }
 
-  .lightbox img {
-    max-width: 80%; /* Reducer billedets bredde i lightbox */
-    max-height: 80%; /* Reducer billedets højde i lightbox */
-  }
-
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
 }
 
 
