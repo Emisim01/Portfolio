@@ -4,13 +4,16 @@
         <div class="imgContainer picture1" @click="openLightbox"></div> <!-- Unik klasse -->
     
         <div class="pictureTextContainer">
-          <div class="textContainerpicture1">
-            <p class="text-white font-bold">HI!</p>
-            <p class="text-white px-10">
-              I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
-              and I love expressing myself through my work. My portfolio is a reflection of that passion—and
-              I hope you feel inspired and connected as you explore it.
+          <div class="textContainerPicture1">
+            <p class="overskrift text-white font-bold text-3xl items-center">WIGGLES IN THE LEAVES!</p> 
+            <p class="mainText text-white px-10 ">
+              This is my own project – not a school project. 
+              I wanted to challenge myself and try a new technique with the discoballs. 
+              I combined a playful cherry motif with a disco-inspired texture to give it a retro-fun vibe. 
+              The pattern is meant to feel cheerful and visually dynamic.
+
             </p>
+       
           </div>
         </div>
       </div>
@@ -56,12 +59,16 @@
       align-items: center; /* Centrerer vertikalt */
       color: white;
       margin: 55px 0;
+      font-family: 'PlusJakartaSans';
+
     }
     
     
     .pageNavText:hover {
       color: white;
       text-decoration: none;
+      font-family: 'PlusJakartaSans';
+
     }
     
     .picture1 {
@@ -81,12 +88,11 @@
     .imgContainer {
       height: 452px;
       width: 331px;
-      background-image: url('@/assets/Wigglesintheleaves.jpg');
       background-size: cover; /* Sørger for, at billedet fylder hele containeren */
       background-position: center; /* Centrerer billedet i containeren */
       background-repeat: no-repeat;
       margin-left: 240px;
-      cursor: pointer; /* Gør det tydeligt, at billedet kan klikkes */
+      cursor: pointer; 
     
     }
     
@@ -100,15 +106,23 @@
       display: flex; /* Sørger for, at tekst kan placeres inde i blobContainer */
       align-items: center; /* Centrerer teksten vertikalt */
       justify-content: center; /* Centrerer teksten horisontalt */
-      padding: 20px; /* Tilføjer lidt indre afstand til teksten */
+      padding: 20px; 
     }
     
     .textContainerpicture1 {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
       color: white; /* Sørger for, at teksten er læsbar */
       font-size: 20px;
-      font-family: 'PlusJakartaSans';
+    }
 
+    .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      padding-bottom: 10px;
+    }
+
+    .mainText {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      padding-bottom: 10px;
+      font-size: 18px;
     }
     
     .lightbox {
@@ -133,4 +147,102 @@
     }
     
     
-    </style>
+    @media (max-width: 768px) {
+  .pageNav {
+    margin: 35px 0; 
+  }
+
+  .pageNavText {
+    font-size: 14px; 
+    padding: 25px;
+  }
+
+  .pictures {
+    flex-direction: column;
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .pictureTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .textContainerPicture1 {
+    font-size: 16px; 
+
+  }
+
+  .pictures {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; 
+  }
+
+  .pictureTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; 
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
+    padding: 0 129px;
+    text-align: center;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1260px) {
+  .pictures {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .pictureTextContainer {
+    height: 450px;
+    width: 650px;
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+
+  .mainText {
+    font-size: 18px; /* Reducer tekststørrelsen */
+    text-align: center; /* Bevar centreret tekst */
+    padding: 0 50px;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+}
+
+
+
+</style>

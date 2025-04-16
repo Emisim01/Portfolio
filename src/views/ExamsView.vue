@@ -5,8 +5,8 @@
     
         <div class="examTextContainer">
           <div class="textContainerExam1">
-            <p class="text-white font-bold">Our first exam project</p>
-            <p class="text-white px-10"> This is my own protject. I wanted to </p>
+            <p class="overskrift text-white font-bold text-3xl items-center uppercase">Our first exam project</p>
+            <p class="mainText text-white px-10"> This is my own protject. I wanted to </p>
             <a href="https://lunadamm.github.io/plastic-webpage/" class="blob-text uppercase" target="_blank" >https://lunadamm.github.io/plastic-webpage/</a>
         </div>
         </div>
@@ -63,7 +63,6 @@
       color: white;
       text-decoration: none;
       font-family: 'PlusJakartaSans';
-      font-family: 'PlusJakartaSans';
     
     }
     
@@ -84,7 +83,6 @@
     .imgContainer {
       height: 452px;
       width: 331px;
-      background-image: url('@/assets/website.png');
       background-size: cover; /* Sørger for, at billedet fylder hele containeren */
       background-position: center; /* Centrerer billedet i containeren */
       background-repeat: no-repeat;
@@ -107,9 +105,18 @@
     }
     
     .textContainerExam1 {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
-      color: white; /* Sørger for, at teksten er læsbar */
       font-size: 20px;
+    }
+
+    .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      padding-bottom: 10px;
+    }
+
+    .mainText {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      padding-bottom: 10px;
+      font-size: 18px;
     }
     
     .lightbox {
@@ -134,4 +141,109 @@
     }
     
     
-    </style>
+    @media (max-width: 768px) {
+  .pageNav {
+    margin: 35px 0; 
+  }
+
+  .pageNavText {
+    font-size: 14px; 
+    padding: 25px;
+  }
+
+  .exam {
+    flex-direction: column;
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .examTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .textContainerExam1 {
+    font-size: 16px; 
+
+  }
+
+  .exam {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; 
+  }
+
+  .examTextContainer {
+    height: 289px;
+    width: 650px;
+    padding: 15px; 
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+  .mainText {
+    font-size: 15px; /* Reducer tekststørrelsen */
+    padding: 0 129px;
+
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1260px) {
+  .exam {
+    flex-direction: column; 
+    gap: 20px; 
+    margin: 20px 0; 
+  }
+
+  .imgContainer {
+    margin-left: 0; /* Fjern venstre margin */
+  }
+
+  .examTextContainer {
+    height: 450px;
+    width: 650px;
+    padding: 15px; /* Reducer padding */
+    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+  }
+
+
+  .mainText {
+    font-size: 18px; /* Reducer tekststørrelsen */
+    text-align: center; /* Bevar centreret tekst */
+    padding: 0 130px;
+
+  }
+
+  .blob-text{
+    font-size: 14px; /* Reducer tekststørrelsen */
+    padding: 0 80px;
+    text-align: center; /* Bevar centreret tekst */
+  }
+
+  .overskrift {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 25px;
+    }
+}
+
+
+
+
+
+</style>

@@ -132,7 +132,6 @@ function closeLightbox() {
 }
 
 .textContainerIllustration1 {
-  color: white; /* Sørger for, at teksten er læsbar */
   font-size: 20px;
   
 }
@@ -140,6 +139,12 @@ function closeLightbox() {
 .overskrift {
       text-align: center; /* Centrerer teksten inde i blobContainer */
       padding-bottom: 10px;
+    }
+
+    .mainText {
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      padding-bottom: 10px;
+      font-size: 18px;
     }
 
 .lightbox {
@@ -163,7 +168,7 @@ function closeLightbox() {
   cursor: pointer; 
 }
 
-@media (max-width: 468px) {
+@media (max-width: 768px) {
   .pageNav {
     margin: 35px 0; 
   }
@@ -226,7 +231,7 @@ function closeLightbox() {
 
 }
 
-@media (max-width: 1260px){
+@media (min-width: 768px) and (max-width: 1260px) {
   .illustration {
     flex-direction: column; 
     gap: 20px; 
@@ -238,7 +243,7 @@ function closeLightbox() {
   }
 
   .illustrationTextContainer {
-    height: 289px;
+    height: 450px;
     width: 650px;
     padding: 15px; /* Reducer padding */
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
@@ -246,9 +251,9 @@ function closeLightbox() {
 
 
   .mainText {
-    font-size: 15px; /* Reducer tekststørrelsen */
+    font-size: 18x; /* Reducer tekststørrelsen */
     text-align: center; /* Bevar centreret tekst */
-    padding: 0 130px;
+    padding: 0 50px;
 
   }
 

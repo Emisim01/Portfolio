@@ -215,7 +215,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 .blob-row {
   display: flex; 
   justify-content: center; /* Centrerer blobs horisontalt */
-  gap: 20px; 
+  gap: 27px; 
 }
 
 .blob {
@@ -288,7 +288,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 .imgContainer {
   height: 452px;
   width: 331px;
-  background-image: url('@/assets/ikkligenu.jpg');
+  background-image: url('@/assets/pictureOfMe.png');
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
   background-position: center; /* Centrerer billedet i containeren */
   background-repeat: no-repeat;
@@ -404,6 +404,37 @@ const marqueeText2 = ref(' PORTFOLIO ')
     padding: 3px 0;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1260px) {
+
+  .about-content {
+    flex-direction: column;
+  }
+
+
+  .imgContainer {
+ display:none;
+  }
+
+  .blob-row {
+    display: flex;
+    flex-wrap: wrap; /* Tillader blobs at brydes til flere rækker */
+    justify-content: center; /* Centrerer blobs horisontalt */
+  }
+
+  .blobContainer {
+    height: 450px;
+    width: 650px;
+  }
+
+  .textContainer {
+    font-size: 20px;
+    padding: 3px 0;
+  }
+} 
+
+
+
 
 
 </style>
