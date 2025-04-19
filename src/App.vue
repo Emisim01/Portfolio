@@ -7,7 +7,7 @@ import Footer from '@/components/Footer.vue'
 
 <template>
   <header>
-
+    
     <div class="wrapper">
 
       <NavBar />
@@ -19,34 +19,6 @@ import Footer from '@/components/Footer.vue'
 </template>
 
 <style scoped>
-
-
-nav {
-  font-size: 25px;
-  text-align: center;
-  background-color: #132E8E;
-  height: 90px;
-  font-family: 'MerriweatherSans';
-
-}
-
-
-
-
-
-/* Skærme under 768px (tablets og mindre) */
- 
-  @media (max-width: 768px) {
- 
-    nav {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 12px 0;
-  }
-
-
-}
 
 
 

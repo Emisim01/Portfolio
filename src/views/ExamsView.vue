@@ -212,20 +212,20 @@
   }
 
   .imgContainer {
-    margin-left: 0; /* Fjern venstre margin */
+    margin-left: 0; 
   }
 
   .examTextContainer {
     height: 450px;
     width: 650px;
-    padding: 15px; /* Reducer padding */
+    padding: 15px; 
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
 
   .mainText {
-    font-size: 18px; /* Reducer tekststørrelsen */
-    text-align: center; /* Bevar centreret tekst */
+    font-size: 18px; 
+    text-align: center; 
     padding: 0 130px;
 
   }
