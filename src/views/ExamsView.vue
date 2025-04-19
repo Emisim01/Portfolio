@@ -231,13 +231,13 @@
   }
 
   .blob-text{
-    font-size: 14px; /* Reducer tekststørrelsen */
+    font-size: 14px; 
     padding: 0 80px;
-    text-align: center; /* Bevar centreret tekst */
+    text-align: center;
   }
 
   .overskrift {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
+      text-align: center;
       font-size: 25px;
     }
 }

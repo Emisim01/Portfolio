@@ -88,11 +88,13 @@ const router = createRouter({
 
   ],
 
+  //cool navbar scroll ned til hvad man trykker på
+
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
       return {
         el: to.hash,
-        behavior: 'smooth', // Gør scrollingen glidende
+        behavior: 'smooth', 
       }
     } else if (savedPosition) {
       return savedPosition

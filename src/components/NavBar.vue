@@ -29,6 +29,7 @@ const showMenu = ref(false)
 const toggleMenu = () => {
   showMenu.value = !showMenu.value
 }
+
 </script>
 
 <style>
@@ -43,8 +44,8 @@ nav {
 }
 
 button {
-  color: white; /* Gør hamburger-ikonet hvidt */
-  font-size: 40px; /* Gør ikonet lidt større */
+  color: white; 
+  font-size: 40px; 
   cursor: pointer;
 }
 

@@ -208,7 +208,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 .card-section {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrerer indholdet horisontalt */
+  align-items: center;
   gap: 20px; 
 }
 
@@ -223,12 +223,12 @@ const marqueeText2 = ref(' PORTFOLIO ')
   width: 351px;
   background-image: url('@/assets/blob.svg');
   background-size: cover; /* Sørger for, at billedet fylder hele containeren */
-  background-position: center; /* Centrerer billedet */
+  background-position: center;
   background-repeat: no-repeat;
   display: flex; 
   justify-content: center; /* Centrerer teksten horisontalt */
   align-items: center; /* Centrerer teksten vertikalt */
-  text-align: center; /* Sørger for, at teksten er centreret */
+  text-align: center; 
   color: white; 
   font-size: 16px;
   font-weight: bold; 
@@ -302,15 +302,15 @@ const marqueeText2 = ref(' PORTFOLIO ')
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
   background-position: center; /* Centrerer billedet i containeren */
   background-repeat: no-repeat;
-  display: flex; /* Sørger for, at tekst kan placeres inde i blobContainer */
-  align-items: center; /* Centrerer teksten vertikalt */
-  justify-content: center; /* Centrerer teksten horisontalt */
-  padding: 20px; /* Tilføjer lidt indre afstand til teksten */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
 }
 
 .textContainer {
-  text-align: center; /* Centrerer teksten inde i blobContainer */
-  color: white; /* Sørger for, at teksten er læsbar */
+  text-align: center; 
+  color: white; 
   font-size: 20px;
   font-family: 'PlusJakartaSans';
 
@@ -347,7 +347,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 @media (max-width: 768px) {
   .hero {
-    height: 400px; /* Reducer højden */
+    height: 400px;
   }
 
   .marquee2 {
@@ -360,7 +360,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   }
 
   .blob-row {
-    flex-direction: column; /* Skift til kolonnevisning */
+    flex-direction: column;
     align-items: center;
   }
 
@@ -386,8 +386,8 @@ const marqueeText2 = ref(' PORTFOLIO ')
   }
 
   .about-content {
-    flex-direction: column; /* Skift til kolonnevisning */
-    gap: 20px; /* Reducer mellemrum */
+    flex-direction: column; 
+    gap: 20px;
   }
 
   .imgContainer {
@@ -418,8 +418,8 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
   .blob-row {
     display: flex;
-    flex-wrap: wrap; /* Tillader blobs at brydes til flere rækker */
-    justify-content: center; /* Centrerer blobs horisontalt */
+    flex-wrap: wrap; 
+    justify-content: center; 
   }
 
   .blobContainer {
