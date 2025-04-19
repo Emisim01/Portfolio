@@ -62,9 +62,8 @@
     <style>
     
     .pageNav {
-      display: flex; /* Gør det muligt at centrere indholdet */
-      justify-content: center; /* Centrerer horisontalt */
-      align-items: center; /* Centrerer vertikalt */
+      display: flex; 
+      justify-content: center;
       color: white;
       margin: 55px 0;
       font-family: 'PlusJakartaSans';
@@ -98,8 +97,8 @@
 }
     
     .illustration {
-      display: flex; /* Placerer imgContainer og blobContainer ved siden af hinanden */
-      align-items: center; /* Justerer dem vertikalt */
+      display: flex; 
+      align-items: center; 
       gap: 70px;
       margin-bottom: 55px;
       margin-top: 55px;
@@ -122,16 +121,16 @@
       width: 650px;
       background-image: url('@/assets/textboxblob.svg');
       background-size: contain; /* Sørger for, at billedet fylder hele containeren */
-      background-position: center; /* Centrerer billedet i containeren */
+      background-position: center; 
       background-repeat: no-repeat;
-      display: flex; /* Sørger for, at tekst kan placeres inde i blobContainer */
-      align-items: center; /* Centrerer teksten vertikalt */
-      justify-content: center; /* Centrerer teksten horisontalt */
-      padding: 20px; /* Tilføjer lidt indre afstand til teksten */
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      padding: 20px; 
     }
     
     .textContainerIllustration2 {
-      color: white; /* Sørger for, at teksten er læsbar */
+      color: white;
       font-size: 20px;
     }
 
@@ -142,7 +141,7 @@
     }
 
     .mainText {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
+      text-align: center;
       padding-bottom: 10px;
       font-size: 18px;
     }
@@ -154,16 +153,16 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Mørk baggrund */
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Sørger for, at den er øverst */
+  z-index: 1000;
 }
 
 .lightbox img {
-  max-width: 90%; /* Sørger for, at billedet ikke fylder hele skærmen */
-  max-height: 90%; /* Sørger for, at billedet ikke går uden for skærmen */
+  max-width: 90%; 
+  max-height: 90%;
   border-radius: 2px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
   cursor: pointer; 
@@ -220,14 +219,14 @@
   }
 
   .mainText {
-    font-size: 15px; /* Reducer tekststørrelsen */
-    text-align: center; /* Bevar centreret tekst */
+    font-size: 15px; 
+    text-align: center; 
     padding: 0 129px;
 
   }
 
   .overskrift {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
+      text-align: center; 
       font-size: 25px;
     }
 
@@ -243,26 +242,26 @@
   }
 
   .imgContainer {
-    margin-left: 0; /* Fjern venstre margin */
+    margin-left: 0; 
   }
 
   .illustrationTextContainer {
     height: 450px;
     width: 650px;
-    padding: 15px; /* Reducer padding */
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+    padding: 15px; 
+    background-size: contain; 
   }
 
 
   .mainText {
-    font-size: 18px; /* Reducer tekststørrelsen */
-    text-align: center; /* Bevar centreret tekst */
+    font-size: 18px; 
+    text-align: center; 
     padding: 0 50px;
 
   }
 
   .overskrift {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
+      text-align: center; 
       font-size: 25px;
     }
 }

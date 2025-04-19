@@ -66,7 +66,6 @@
     .pageNav {
       display: flex; /* Gør det muligt at centrere indholdet */
       justify-content: center; /* Centrerer horisontalt */
-      align-items: center; /* Centrerer vertikalt */
       color: white;
       margin: 55px 0;
     }
