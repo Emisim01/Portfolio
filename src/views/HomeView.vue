@@ -30,7 +30,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
         {{ marqueeText }}
       </span>
     </p>
-    <p class="marquee marquee2">
+    <p class="marquee2">
       <span class="text-white text-6xl font-bold rolltextTwo">
         {{ marqueeText2 }} 
       </span>
@@ -168,6 +168,15 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 }
 
+.marquee2 {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  font-family: 'MerriweatherSans';
+
+}
+
 .marquee span {
   display: inline-block;
   animation: marquee 10s linear infinite;
@@ -178,8 +187,9 @@ const marqueeText2 = ref(' PORTFOLIO ')
 }
 
 .marquee2 span {
-  animation-delay: 0s;
-  margin-top: 0;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  white-space: nowrap;
   font-family: 'MerriweatherSans';
 
 }
@@ -347,16 +357,28 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 @media (max-width: 768px) {
   .hero {
-    height: 400px;
+    height: 350px;
+  }
+
+  .marquee {
+    position: absolute;
+    top: 38%;
   }
 
   .marquee2 {
-
+    position: absolute;
+    top: 50%;
   }
 
   .marquee span {
     font-size: 30px;
-    margin: none;
+    margin-top: 0px;
+  }
+
+  .marquee2 span {
+    font-size: 30px;
+    margin-top: 1px;
+
   }
 
   .blob-row {

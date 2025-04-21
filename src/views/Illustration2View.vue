@@ -62,11 +62,12 @@
     <style>
     
     .pageNav {
-      display: flex; 
-      justify-content: center;
-      color: white;
-      margin: 55px 0;
-      font-family: 'PlusJakartaSans';
+      display: flex; /* Gør det muligt at centrere indholdet */
+  justify-content: center; /* Centrerer horisontalt */
+  align-items: center; /* Centrerer vertikalt */
+  color: white;
+  margin: 55px 0;
+  font-family: 'PlusJakartaSans';
 
     }
     
@@ -147,7 +148,7 @@
     }
 
 
-    .lightbox {
+  .lightbox {
   position: fixed;
   top: 0;
   left: 0;
@@ -168,7 +169,7 @@
   cursor: pointer; 
 }
     
-    @media (max-width: 468px) {
+    @media (max-width: 768px) {
   .pageNav {
     margin: 35px 0; 
   }
@@ -212,22 +213,21 @@
   }
 
   .illustrationTextContainer {
-    height: 289px;
+    height: 240px;
     width: 650px;
     padding: 15px; 
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
   .mainText {
-    font-size: 15px; 
-    text-align: center; 
-    padding: 0 129px;
+    font-size: 13px; 
+    padding: 0 162px;
 
   }
 
   .overskrift {
-      text-align: center; 
-      font-size: 25px;
+      text-align: center; /* Centrerer teksten inde i blobContainer */
+      font-size: 22px;
     }
 
 

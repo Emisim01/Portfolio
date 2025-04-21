@@ -165,7 +165,7 @@
   cursor: pointer; 
 }
     
-    @media (max-width: 468px) {
+    @media (max-width: 768px) {
   .pageNav {
     margin: 35px 0; 
   }
@@ -207,21 +207,21 @@
   }
 
   .illustrationTextContainer {
-    height: 289px;
+    height: 240px;
     width: 650px;
     padding: 15px; 
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
   .mainText {
-    font-size: 15px; /* Reducer tekststørrelsen */
-    padding: 0 129px;
+    font-size: 13px; 
+    padding: 0 162px;
 
   }
 
   .overskrift {
       text-align: center; /* Centrerer teksten inde i blobContainer */
-      font-size: 25px;
+      font-size: 22px;
     }
 
 

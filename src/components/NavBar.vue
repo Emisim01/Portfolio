@@ -12,7 +12,7 @@
   </nav>
 
   <!-- Mobil menu dropdown -->
-  <div v-if="showMenu" class="hamburgerMobile flex flex-col gap-2 p-4 md:hidden">
+  <div v-if="showMenu" class="hamburgerMobile flex flex-col gap-2 p-4 md:hidden" @mouseleave="closeMenu">
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/#projects">Projects</RouterLink>
     <RouterLink to="/#about">About</RouterLink>
@@ -26,8 +26,13 @@
   import { ref } from 'vue'
 
 const showMenu = ref(false)
+
 const toggleMenu = () => {
   showMenu.value = !showMenu.value
+}
+
+const closeMenu = () => {
+  showMenu.value = false
 }
 
 </script>
@@ -47,6 +52,14 @@ button {
   color: white; 
   font-size: 40px; 
   cursor: pointer;
+}
+
+.hamburgerMobile {
+  background-color: #132E8E;
+  color: white;
+  font-size: 25px;
+  font-family: 'MerriweatherSans';
+align-items: center;
 }
 
 </style>

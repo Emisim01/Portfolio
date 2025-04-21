@@ -49,7 +49,7 @@
     <style>
     
     .pageNav {
-      display: flex; /* Gør det muligt at centrere indholdet */
+      display: flex; 
       justify-content: center; /* Centrerer horisontalt */
       align-items: center; /* Centrerer vertikalt */
       color: white;
@@ -72,9 +72,9 @@
         
     
     .exam {
-      display: flex; /* Placerer imgContainer og blobContainer ved siden af hinanden */
+      display: flex; 
       align-items: center; /* Justerer dem vertikalt */
-      gap: 70px; /* Tilføjer mellemrum mellem de to containere */
+      gap: 70px; 
       margin-bottom: 55px;
       margin-top: 55px;
     
@@ -98,10 +98,10 @@
       background-size: contain; /* Sørger for, at billedet fylder hele containeren */
       background-position: center; /* Centrerer billedet i containeren */
       background-repeat: no-repeat;
-      display: flex; /* Sørger for, at tekst kan placeres inde i blobContainer */
-      align-items: center; /* Centrerer teksten vertikalt */
-      justify-content: center; /* Centrerer teksten horisontalt */
-      padding: 20px; /* Tilføjer lidt indre afstand til teksten */
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      padding: 20px; /
     }
     
     .textContainerExam1 {

@@ -98,9 +98,9 @@ function closeLightbox() {
     
 
 .illustration {
-  display: flex; /* Placerer imgContainer og blobContainer ved siden af hinanden */
-  align-items: center; /* Justerer dem vertikalt */
-  gap: 70px; /* Tilføjer mellemrum mellem de to containere */
+  display: flex; 
+  align-items: center; 
+  gap: 70px;
   margin-bottom: 55px;
   margin-top: 55px;
 
@@ -125,10 +125,10 @@ function closeLightbox() {
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
   background-position: center; /* Centrerer billedet i containeren */
   background-repeat: no-repeat;
-  display: flex; /* Sørger for, at tekst kan placeres inde i blobContainer */
-  align-items: center; /* Centrerer teksten vertikalt */
-  justify-content: center; /* Centrerer teksten horisontalt */
-  padding: 20px; /* Tilføjer lidt indre afstand til teksten */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px; 
 }
 
 .textContainerIllustration1 {
@@ -153,7 +153,7 @@ function closeLightbox() {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Mørk baggrund */
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,13 +185,13 @@ function closeLightbox() {
   }
 
   .imgContainer {
-    margin-left: 0; /* Fjern venstre margin */
+    margin-left: 0; 
   }
 
   .illustrationTextContainer {
     height: 289px;
     width: 650px;
-    padding: 15px; /* Reducer padding */
+    padding: 15px;
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
@@ -211,21 +211,21 @@ function closeLightbox() {
   }
 
   .illustrationTextContainer {
-    height: 289px;
+    height: 240px;
     width: 650px;
     padding: 15px; 
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
   .mainText {
-    font-size: 15px; /* Reducer tekststørrelsen */
-    padding: 0 129px;
+    font-size: 13px; 
+    padding: 0 162px;
 
   }
 
   .overskrift {
       text-align: center; /* Centrerer teksten inde i blobContainer */
-      font-size: 25px;
+      font-size: 22px;
     }
 
 
