@@ -62,7 +62,7 @@
     <style>
     
     .pageNav {
-      display: flex; /* Gør det muligt at centrere indholdet */
+      display: flex; 
   justify-content: center; /* Centrerer horisontalt */
   align-items: center; /* Centrerer vertikalt */
   color: white;
@@ -131,7 +131,6 @@
     }
     
     .textContainerIllustration2 {
-      color: white;
       font-size: 20px;
     }
 

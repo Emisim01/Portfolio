@@ -417,13 +417,14 @@ const marqueeText2 = ref(' PORTFOLIO ')
   }
 
   .blobContainer {
-    width: 354px; 
-    height: 254px; 
+    width: 318px; 
+    height: 227px; 
+    padding: 1px;
   }
 
   .textContainer {
     font-size: 13px; 
-    padding: 3px 0;
+    padding: 1px;
   }
 }
 
