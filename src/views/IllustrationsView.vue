@@ -188,13 +188,6 @@ function closeLightbox() {
     margin-left: 0; 
   }
 
-  .illustrationTextContainer {
-    height: 289px;
-    width: 650px;
-    padding: 15px;
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
-  }
-
   .textContainerIllustration1 {
     font-size: 16px; 
 
@@ -212,20 +205,20 @@ function closeLightbox() {
 
   .illustrationTextContainer {
     height: 240px;
-    width: 650px;
+    width: 333px;
     padding: 15px; 
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
   .mainText {
-    font-size: 13px; 
-    padding: 0 162px;
+    font-size: 12px; 
+    padding: 0 31px;
 
   }
 
   .overskrift {
       text-align: center; /* Centrerer teksten inde i blobContainer */
-      font-size: 22px;
+      font-size: 20px;
     }
 
 

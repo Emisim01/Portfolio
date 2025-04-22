@@ -7,10 +7,9 @@
           <div class="textContainerPicture1">
             <p class="overskrift text-white font-bold text-3xl items-center">WIGGLES IN THE LEAVES!</p> 
             <p class="mainText text-white px-10 ">
-              This is my own project – not a school project. 
-              I wanted to challenge myself and try a new technique with the discoballs. 
-              I combined a playful cherry motif with a disco-inspired texture to give it a retro-fun vibe. 
-              The pattern is meant to feel cheerful and visually dynamic.
+              This photo was submitted to a photography competition where only color adjustments were allowed.
+              I aimed to capture the dog's expressive eyes and the tiny water droplets clinging to its whiskers. 
+              I slightly adjusted the saturation to bring out the autumn tones in the background.
 
             </p>
        
@@ -164,14 +163,7 @@
   }
 
   .imgContainer {
-    margin-left: 0; /* Fjern venstre margin */
-  }
-
-  .pictureTextContainer {
-    height: 289px;
-    width: 650px;
-    padding: 15px; /* Reducer padding */
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
+    margin-left: 0; 
   }
 
   .textContainerPicture1 {
@@ -190,22 +182,20 @@
   }
 
   .pictureTextContainer {
-    height: 289px;
-    width: 650px;
+    height: 240px;
+    width: 333px;
     padding: 15px; 
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
   .mainText {
-    font-size: 15px; /* Reducer tekststørrelsen */
-    padding: 0 129px;
-    text-align: center;
-
+    font-size: 12px;
+    padding: 0 31px;
   }
 
   .overskrift {
       text-align: center; /* Centrerer teksten inde i blobContainer */
-      font-size: 25px;
+      font-size: 20px;
     }
 
 
