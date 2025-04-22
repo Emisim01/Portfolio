@@ -57,17 +57,18 @@
     function closeLightbox() {
       isLightboxOpen.value = false
     }
+
     </script>
     
     <style>
     
     .pageNav {
       display: flex; 
-  justify-content: center; /* Centrerer horisontalt */
-  align-items: center; /* Centrerer vertikalt */
-  color: white;
-  margin: 55px 0;
-  font-family: 'PlusJakartaSans';
+      justify-content: center; 
+      align-items: center;
+      color: white;
+      margin: 55px 0;
+      font-family: 'PlusJakartaSans';
 
     }
     
@@ -80,22 +81,21 @@
     }
 
   
-
     .illustration1 {
-  background-image: url('@/assets/disco.png');
-}
+      background-image: url('@/assets/disco.png');
+    }
 
-.illustration2 {
-  background-image: url('@/assets/Ramenposter.png');
-}
+    .illustration2 {
+      background-image: url('@/assets/Ramenposter.png');
+    }
 
-.illustration3 {
-  background-image: url('@/assets/livelaughlove.png');
-}
+    .illustration3 {
+      background-image: url('@/assets/livelaughlove.png');
+    }
        
-.illustration4 {
-  background-image: url('@/assets/internationalday.png');
-}
+    .illustration4 {
+      background-image: url('@/assets/internationalday.png');
+    }
     
     .illustration {
       display: flex; 
@@ -107,15 +107,14 @@
     }
     
     .imgContainer {
-  height: 452px;
-  width: 331px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  margin-left: 240px;
-
-}
+      height: 452px;
+      width: 331px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      margin-left: 240px;
+    }
     
     .illustrationTextContainer {
       height: 450px;
@@ -132,99 +131,88 @@
     
     .textContainerIllustration2 {
       font-size: 20px;
+      font-family: 'PlusJakartaSans';
+
     }
 
     .overskrift {
       text-align: center;
       padding-bottom: 10px;
-
+      font-family: 'MerriweatherSans';
     }
 
     .mainText {
       text-align: center;
       padding-bottom: 10px;
       font-size: 18px;
+      font-family: 'PlusJakartaSans';
+
     }
 
 
-  .lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
 
-.lightbox img {
-  max-width: 90%; 
-  max-height: 90%;
-  border-radius: 2px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-  cursor: pointer; 
-}
+    .lightbox img {
+      max-width: 90%; 
+      max-height: 90%;
+      border-radius: 2px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+      cursor: pointer; 
+    }
     
     @media (max-width: 768px) {
-  .pageNav {
-    margin: 35px 0; 
-  }
+    .pageNav {
+      margin: 35px 0; 
+    }
 
-  .pageNavText {
-    font-size: 14px; 
-    padding: 25px;
-  }
+    .pageNavText {
+      font-size: 14px; 
+      padding: 25px;
+    }
 
-  .illustration {
-    flex-direction: column;
-    gap: 20px; 
-    margin: 20px 0; 
-  }
+    .imgContainer {
+      margin-left: 0; 
+      width: 314px; 
+    }
 
-  .imgContainer {
-    margin-left: 0; 
-  }
-
-  .illustrationTextContainer {
-    height: 289px;
-    width: 650px;
-    padding: 15px; 
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
-  }
-
-  .textContainerIllustration2 {
-    font-size: 16px; 
-    text-align: center; 
-  }
+    .textContainerIllustration2 {
+      font-size: 16px; 
+      text-align: center; 
+    }
 
 
-  .illustration {
-    flex-direction: column; 
-    gap: 20px; 
-    margin: 20px 0; 
-  }
+    .illustration {
+      flex-direction: column; 
+      gap: 20px; 
+      margin: 20px 0; 
+    }
 
-  .imgContainer {
-    margin-left: 0; 
-  }
-  .illustrationTextContainer {
-    height: 240px;
-    width: 333px;
-    padding: 15px; 
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
-  }
+    .illustrationTextContainer {
+      height: 240px;
+      width: 333px;
+      padding: 15px; 
+      background-size: contain; 
+    }
 
-  .mainText {
-    font-size: 12px; 
-    padding: 0 31px;
+    .mainText {
+      font-size: 12px; 
+      padding: 0 31px;
 
-  }
+    }
 
-  .overskrift {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
+    .overskrift {
+      text-align: center; 
       font-size: 20px;
     }
 
@@ -264,8 +252,4 @@
     }
 }
 
-
-
-    
-    
     </style>

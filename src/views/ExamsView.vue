@@ -6,8 +6,12 @@
         <div class="examTextContainer">
           <div class="textContainerExam1">
             <p class="overskrift text-white font-bold text-3xl items-center uppercase">Our first exam project</p>
-            <p class="mainText text-white px-10"> This is my own protject. I wanted to </p>
-            <a href="https://lunadamm.github.io/plastic-webpage/" class="blob-text uppercase" target="_blank" >https://lunadamm.github.io/plastic-webpage/</a>
+            <p class="mainText gradeText text-white px-10 font-bold"> Grade: 12</p>
+            <p class="mainText mainTextExam text-white px-10"> This exam project was created in a group of four.
+              Our task was to design a website encouraging people to sign the Global Plastic Treaty.
+              I was responsible for a significant part of both the coding and the design.</p>
+              <p class="mainText wayToWeb text-white px-10 font-bold ">  You can check out the website by clicking the link below. </p>
+            <a href="https://lunadamm.github.io/plastic-webpage/" class="blob-text uppercase" target="_blank" >https://plastic-webpage/</a>
         </div>
         </div>
       </div>
@@ -45,205 +49,199 @@
       isLightboxOpen.value = false
     }
     </script>
+
     
     <style>
     
-    .pageNav {
-      display: flex; 
-      justify-content: center; /* Centrerer horisontalt */
-      align-items: center; /* Centrerer vertikalt */
-      color: white;
-      margin: 55px 0;
-      font-family: 'PlusJakartaSans';
+.pageNav {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  color: white;
+  margin: 55px 0;
+  font-family: 'PlusJakartaSans';    
+}
     
-    }
+.pageNavText:hover {
+  color: white;
+  text-decoration: none;
+  font-family: 'PlusJakartaSans'; 
+}
     
-    
-    .pageNavText:hover {
-      color: white;
-      text-decoration: none;
-      font-family: 'PlusJakartaSans';
-    
-    }
-    
-    .exam1 {
-          background-image: url('@/assets/website.png');
-        }
+.exam1 {
+  background-image: url('@/assets/website.png');
+}
         
+.exam {
+  display: flex; 
+  align-items: center;
+  gap: 70px; 
+  margin-bottom: 55px;
+  margin-top: 55px;  
+}
     
-    .exam {
-      display: flex; 
-      align-items: center; /* Justerer dem vertikalt */
-      gap: 70px; 
-      margin-bottom: 55px;
-      margin-top: 55px;
+.imgContainer {
+  height: 452px;
+  width: 331px;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  margin-left: 240px;
+  cursor: pointer;
+}
     
-    }
+.examTextContainer {
+  height: 450px;
+  width: 650px;
+  background-image: url('@/assets/textboxblob.svg');
+  background-size: contain; /* Sørger for, at billedet fylder hele containeren */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+}
     
-    .imgContainer {
-      height: 452px;
-      width: 331px;
-      background-size: cover; /* Sørger for, at billedet fylder hele containeren */
-      background-position: center; /* Centrerer billedet i containeren */
-      background-repeat: no-repeat;
-      margin-left: 240px;
-      cursor: pointer; /* Gør det tydeligt, at billedet kan klikkes */
-    
-    }
-    
-    .examTextContainer {
-      height: 450px;
-      width: 650px;
-      background-image: url('@/assets/textboxblob.svg');
-      background-size: contain; /* Sørger for, at billedet fylder hele containeren */
-      background-position: center; /* Centrerer billedet i containeren */
-      background-repeat: no-repeat;
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
-      padding: 20px; /
-    }
-    
-    .textContainerExam1 {
-      font-size: 20px;
-    }
+.textContainerExam1 {
+  font-size: 20px;
+}
 
-    .overskrift {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
-      padding-bottom: 10px;
-    }
+.overskrift {
+  text-align: center;
+  padding-bottom: 10px;
+}
 
-    .mainText {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
-      padding-bottom: 10px;
-      font-size: 18px;
-    }
+.mainText {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.blob-text {
+  display: block;
+  text-align: center;
+}
     
-    .lightbox {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.8); /* Mørk baggrund */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000; /* Sørger for, at den er øverst */
-    }
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
     
-    .lightbox img {
-      max-width: 90%; /* Sørger for, at billedet ikke fylder hele skærmen */
-      max-height: 90%; /* Sørger for, at billedet ikke går uden for skærmen */
-      border-radius: 2px; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-      cursor: pointer; /* Gør det tydeligt, at billedet kan klikkes */
-    }
+.lightbox img {
+  max-width: 90%; /* Sørger for, at billedet ikke fylder hele skærmen */
+  max-height: 90%; /* Sørger for, at billedet ikke går uden for skærmen */
+  border-radius: 2px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  cursor: pointer; 
+}
     
     
     @media (max-width: 768px) {
-  .pageNav {
-    margin: 35px 0; 
-  }
+.pageNav {
+  margin: 35px 0; 
+}
 
-  .pageNavText {
-    font-size: 14px; 
-    padding: 25px;
-  }
+.pageNavText {
+  font-size: 14px; 
+  padding: 25px;
+}
 
-  .exam {
-    flex-direction: column;
-    gap: 20px; 
-    margin: 20px 0; 
-  }
+.exam {
+  flex-direction: column;
+  gap: 20px; 
+  margin: 20px 0; 
+}
 
-  .imgContainer {
-    margin-left: 0; /* Fjern venstre margin */
-  }
+.textContainerExam1 {
+  font-size: 16px; 
+}
 
-  .examTextContainer {
-    height: 289px;
-    width: 650px;
-    padding: 15px; /* Reducer padding */
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
-  }
+.imgContainer {
+  margin-left: 0; 
+  width: 314px;
+}
 
-  .textContainerExam1 {
-    font-size: 16px; 
+.examTextContainer {
+  height: 240px;
+  width: 333px;
+  padding: 15px; 
+  background-size: contain; 
+}
 
-  }
+.mainTextExam {
+  font-size: 12px; 
+  padding: 0 12px;
+}
 
-  .exam {
-    flex-direction: column; 
-    gap: 20px; 
-    margin: 20px 0; 
-  }
+.overskrift {
+  text-align: center;
+  font-size: 20px;
+}
 
-  .imgContainer {
-    margin-left: 0; 
-  }
+.wayToWeb {
+  display: none;
+}
 
-  .examTextContainer {
-    height: 289px;
-    width: 650px;
-    padding: 15px; 
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
-  }
+.blob-text{
+  display: block;
+  font-size: 12px;
+  padding: 0 21px;
+  text-align: center;
+  margin-top: 10px;
+}
 
-  .mainText {
-    font-size: 15px; /* Reducer tekststørrelsen */
-    padding: 0 129px;
-
-  }
-
-  .overskrift {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
-      font-size: 25px;
-    }
+.gradeText {
+  display: none;
+}
 
 
 }
 
-@media (min-width: 768px) and (max-width: 1260px) {
-  .exam {
-    flex-direction: column; 
-    gap: 20px; 
-    margin: 20px 0; 
-  }
-
-  .imgContainer {
-    margin-left: 0; 
-  }
-
-  .examTextContainer {
-    height: 450px;
-    width: 650px;
-    padding: 15px; 
-    background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
-  }
-
-
-  .mainText {
-    font-size: 18px; 
-    text-align: center; 
-    padding: 0 130px;
-
-  }
-
-  .blob-text{
-    font-size: 14px; 
-    padding: 0 80px;
-    text-align: center;
-  }
-
-  .overskrift {
-      text-align: center;
-      font-size: 25px;
-    }
+    @media (min-width: 768px) and (max-width: 1260px) {
+.exam {
+  flex-direction: column; 
+  gap: 20px; 
+  margin: 20px 0; 
 }
 
+.imgContainer {
+  margin-left: 0; 
+}
 
+.examTextContainer {
+  height: 450px;
+  width: 650px;
+  padding: 15px; 
+  background-size: contain;
+}
 
+.mainText {
+  font-size: 18px; 
+  text-align: center; 
+  padding: 0 130px;
+}
+
+.blob-text{
+  font-size: 14px; 
+  padding: 0 80px;
+  text-align: center;
+}
+
+.overskrift {
+  text-align: center;
+  font-size: 25px;
+}
+
+}
 
 
 </style>

@@ -64,16 +64,20 @@
     <style>
     
     .pageNav {
-      display: flex; /* Gør det muligt at centrere indholdet */
-      justify-content: center; /* Centrerer horisontalt */
+      display: flex; 
+      justify-content: center;
       color: white;
       margin: 55px 0;
+      font-family: 'PlusJakartaSans';
+
     }
     
     
     .pageNavText:hover {
       color: white;
       text-decoration: none;
+      font-family: 'PlusJakartaSans';
+
     }
 
 
@@ -127,20 +131,27 @@
       padding: 20px; /* Tilføjer lidt indre afstand til teksten */
     }
     
+    
     .textContainerIllustration3 {
-      color: white; /* Sørger for, at teksten er læsbar */
       font-size: 20px;
+      font-family: 'PlusJakartaSans';
+
     }
 
     .overskrift {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
+      text-align: center;
       padding-bottom: 10px;
+      font-family: 'MerriweatherSans';
+
+
     }
-  
+
     .mainText {
-      text-align: center; /* Centrerer teksten inde i blobContainer */
+      text-align: center;
       padding-bottom: 10px;
       font-size: 18px;
+      font-family: 'PlusJakartaSans';
+
     }
 
 
@@ -182,7 +193,9 @@
   }
 
   .imgContainer {
-    margin-left: 0; /* Fjern venstre margin */
+    margin-left: 0;
+    width: 314px;
+
   }
 
   .illustrationTextContainer {
