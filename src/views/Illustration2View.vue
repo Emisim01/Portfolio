@@ -1,12 +1,12 @@
 <template>
 
-    <div class="illustration">
+    <div class="illustration flex items-center">
         <div class="imgContainer illustration2" @click="openLightbox"></div> <!-- Unik klasse -->
     
-        <div class="illustrationTextContainer">
-          <div class="textContainerIllustration2">
-            <p class="overskrift text-white font-bold text-3xl items-center">RAMEN POSTER!</p> 
-            <p class="mainText text-white px-10">
+        <div class="illustrationTextContainer flex items-center justify-center">
+          <div class="textContainerIllustration2 text-white">
+            <p class="overskrift text-white font-bold text-3xl text-center">RAMEN POSTER!</p> 
+            <p class="mainTextIllustration2 text-white px-10 text-center">
               This is my own project - not a school project. I wanted to create a poster that would be eye-catching and fun.
               I used bright colors and playful typography to achieve this.
               The ramen bowl is a nod to my love of Japanese culture and cuisine. This is one of my first projects on my own.
@@ -98,8 +98,6 @@
     }
     
     .illustration {
-      display: flex; 
-      align-items: center; 
       gap: 70px;
       margin-bottom: 55px;
       margin-top: 55px;
@@ -123,30 +121,24 @@
       background-size: contain; /* Sørger for, at billedet fylder hele containeren */
       background-position: center; 
       background-repeat: no-repeat;
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
+      font-family: 'PlusJakartaSans';
       padding: 20px; 
     }
     
     .textContainerIllustration2 {
       font-size: 20px;
       font-family: 'PlusJakartaSans';
-
     }
 
     .overskrift {
-      text-align: center;
       padding-bottom: 10px;
       font-family: 'MerriweatherSans';
     }
 
-    .mainText {
-      text-align: center;
+    .mainTextIllustration2 {
       padding-bottom: 10px;
       font-size: 18px;
       font-family: 'PlusJakartaSans';
-
     }
 
 
@@ -188,9 +180,7 @@
 
     .textContainerIllustration2 {
       font-size: 16px; 
-      text-align: center; 
     }
-
 
     .illustration {
       flex-direction: column; 
@@ -205,17 +195,15 @@
       background-size: contain; 
     }
 
-    .mainText {
+    .mainTextIllustration2 {
       font-size: 12px; 
       padding: 0 31px;
-
     }
 
     .overskrift {
       text-align: center; 
       font-size: 20px;
     }
-
 
 
 }
@@ -239,7 +227,7 @@
   }
 
 
-  .mainText {
+  .mainTextIllustration2 {
     font-size: 18px; 
     text-align: center; 
     padding: 0 50px;

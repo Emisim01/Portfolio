@@ -1,12 +1,12 @@
 <template>
 
-<div class="illustration">
+<div class="illustration flex items-center">
         <div class="imgContainer illustration1" @click="openLightbox"></div> <!-- Unik klasse -->
     
-        <div class="illustrationTextContainer">
-          <div class="textContainerIllustration1">
-            <p class="overskrift text-white font-bold text-3xl items-center">CHERRY DISCO POSTER!</p> 
-            <p class="mainText text-white px-10">
+        <div class="illustrationTextContainer flex items-center justify-center">
+          <div class="textContainerIllustration1 text-white">
+            <p class="overskrift text-white font-bold text-3xl text-center">CHERRY DISCO POSTER!</p> 
+            <p class="mainTextIllustration1 text-white px-10 text-center">
               This is my own project – not a school project. 
               I wanted to challenge myself and try a new technique with the discoballs. 
               I combined a playful cherry motif with a disco-inspired texture to give it a retro-fun vibe. 
@@ -98,8 +98,6 @@ function closeLightbox() {
     
 
 .illustration {
-  display: flex; 
-  align-items: center; 
   gap: 70px;
   margin-bottom: 55px;
   margin-top: 55px;
@@ -124,31 +122,24 @@ function closeLightbox() {
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
   background-position: center;
   background-repeat: no-repeat;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
   padding: 20px; 
 }
 
 .textContainerIllustration1 {
   font-size: 20px;
   font-family: 'PlusJakartaSans';
-
 }
 
 .overskrift {
-  text-align: center; 
   padding-bottom: 10px;
   font-family: 'MerriweatherSans';
 
 }
 
-.mainText {
-  text-align: center; 
+.mainTextIllustration1 {
   padding-bottom: 10px;
   font-size: 18px;
   font-family: 'PlusJakartaSans';
-
 }
 
 .lightbox {
@@ -204,7 +195,7 @@ function closeLightbox() {
     background-size: contain; /* Sørger for, at baggrunden tilpasser sig */
   }
 
-  .mainText {
+  .mainTextIllustration1 {
     font-size: 12px; 
     padding: 0 31px;
 
@@ -237,7 +228,7 @@ function closeLightbox() {
   }
 
 
-  .mainText {
+  .mainTextIllustration1 {
     font-size: 18x;
     text-align: center; 
     padding: 0 50px;

@@ -129,13 +129,11 @@
     .textContainerIllustration4 {
       font-size: 20px;
       font-family: 'PlusJakartaSans';
-
     }
 
     .overskrift {
       padding-bottom: 10px;
       font-family: 'MerriweatherSans';
-
     }
 
     .mainTextIllustration4 {

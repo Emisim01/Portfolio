@@ -1,13 +1,13 @@
 <template>
 
-    <div class="exam">
+    <div class="exam flex items-center">
         <div class="imgContainer exam1" @click="openLightbox"></div> <!-- Unik klasse -->
     
-        <div class="examTextContainer">
-          <div class="textContainerExam1">
-            <p class="overskrift text-white font-bold text-3xl items-center uppercase">Our first exam project</p>
-            <p class="mainText gradeText text-white px-10 font-bold"> Grade: 12</p>
-            <p class="mainText mainTextExam text-white px-10"> This exam project was created in a group of four.
+        <div class="examTextContainer flex items-center justify-center">
+          <div class="textContainerExam1 text-white">
+            <p class="overskrift text-white font-bold text-3xl text-center uppercase">Our first exam project</p>
+            <p class="mainText gradeText text-white px-10 font-bold text-center"> Grade: 12</p>
+            <p class="mainText mainTextExam text-white px-10 text-center"> This exam project was created in a group of four.
               Our task was to design a website encouraging people to sign the Global Plastic Treaty.
               I was responsible for a significant part of both the coding and the design.</p>
               <p class="mainText wayToWeb text-white px-10 font-bold ">  You can check out the website by clicking the link below. </p>
@@ -73,8 +73,6 @@
 }
         
 .exam {
-  display: flex; 
-  align-items: center;
   gap: 70px; 
   margin-bottom: 55px;
   margin-top: 55px;  
@@ -97,25 +95,29 @@
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
   background-position: center;
   background-repeat: no-repeat;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
   padding: 20px;
 }
     
 .textContainerExam1 {
   font-size: 20px;
+  font-family: 'PlusJakartaSans';
 }
 
 .overskrift {
-  text-align: center;
   padding-bottom: 10px;
+  font-family: 'MerriweatherSans';
 }
 
 .mainText {
-  text-align: center;
   padding-bottom: 10px;
   font-size: 18px;
+  font-family: 'PlusJakartaSans';
+}
+
+.mainTextExam {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: 'PlusJakartaSans';
 }
 
 .blob-text {
@@ -226,12 +228,18 @@
 
 .mainText {
   font-size: 18px; 
+  padding: 0 61px;
+  padding-bottom: 10px;
+}
+
+.mainTextExam {
+  font-size: 18px; 
   text-align: center; 
-  padding: 0 130px;
+  padding: 0 37px;
 }
 
 .blob-text{
-  font-size: 14px; 
+  font-size: 19px; 
   padding: 0 80px;
   text-align: center;
 }
