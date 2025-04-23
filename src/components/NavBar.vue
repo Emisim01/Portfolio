@@ -40,10 +40,10 @@ const closeMenu = () => {
 <style>
 
 nav {
-  font-size: 25px;
+  font-size: 20px;
   align-items: center;
   background-color: #132E8E;
-  height: 90px;
+  height: 80px;
   font-family: 'MerriweatherSans';
 
 }
@@ -61,5 +61,7 @@ button {
   font-family: 'MerriweatherSans';
 align-items: center;
 }
+
+
 
 </style>

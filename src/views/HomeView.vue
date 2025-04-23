@@ -50,8 +50,9 @@ const marqueeText2 = ref(' PORTFOLIO ')
   </div>
   </main>
 
-  <section id="projects" class="card-section">
-    <p class="section-title text-very-bluey font-bold uppercase pt-7 ">Projects</p>
+  <section id="projects" class="card-section flex items-center">
+    <p class="section-title text-very-bluey font-bold uppercase pt-7 text-center">Projects</p>
+    
   <div class="blob-row">
     <div class="blob">
       <router-link to="/illustrations" class="blob-text1 uppercase">Illustrations</router-link>
@@ -59,15 +60,20 @@ const marqueeText2 = ref(' PORTFOLIO ')
     <div class="blob">
       <router-link to="/pictures" class="blob-text uppercase">Pictures</router-link>
     </div>
+        </div>
+
+        <div class="blob-row">
     <div class="blob">
       <router-link to="/ux" class="blob-text uppercase">UX</router-link>
-    </div>
-    </div>
-
-  <div class="blob-row">
+    </div> 
+    
     <div class="blob">
       <router-link to="/frontend development" class="blob-text1 uppercase">Frontend development</router-link>
     </div>
+  </div>
+
+
+  <div class="blob-row">
     <div class="blob">
       <router-link to="/exams" class="blob-text uppercase">Exams</router-link>
     </div>
@@ -80,13 +86,13 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
   <section  id="about" class="about-section">
 
-    <p class="section-abouttitle text-very-bluey font-bold uppercase ">About me</p>
+    <p class="section-abouttitle text-very-bluey font-bold uppercase text-center">About me</p>
   
-    <div class="about-content">
+    <div class="about-content flex items-center">
     <div class="imgContainer "></div>
 
     <div class="blobContainer ">
-      <div class="textContainer">
+      <div class="textContainer text-center text-white">
         <p class=" text-white font-bold"> HI!</p>
         <p class=" text-white px-10">
           I'm Emilie Stryhn Simonsen, a 21-year-old creative soul from Esbjerg. I have a big passion for design and all things creative,
@@ -130,7 +136,6 @@ const marqueeText2 = ref(' PORTFOLIO ')
 </template>
 
 <style scoped>
-
 
 
 .rolltextOne {
@@ -207,7 +212,6 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 .section-title {
   font-size: 54px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 55px;
   border-bottom: 3px solid var(--color-white);
@@ -216,28 +220,26 @@ const marqueeText2 = ref(' PORTFOLIO ')
 }
 
 .card-section {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px; 
 }
 
 .blob-row {
   display: flex; 
-  justify-content: center; /* Centrerer blobs horisontalt */
-  gap: 27px; 
+  justify-content: center;
+  gap: 70px; 
 }
 
 .blob {
   height: 361px; 
   width: 351px;
   background-image: url('@/assets/blob.svg');
-  background-size: cover; /* Sørger for, at billedet fylder hele containeren */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex; 
-  justify-content: center; /* Centrerer teksten horisontalt */
-  align-items: center; /* Centrerer teksten vertikalt */
+  justify-content: center; 
+  align-items: center; 
   text-align: center; 
   color: white; 
   font-size: 16px;
@@ -256,12 +258,11 @@ const marqueeText2 = ref(' PORTFOLIO ')
 .blob-text:hover {
   font-size: 28px;
   font-family: 'PlusJakartaSans';
-
 }
 
 .blob-text1 {
-  text-decoration: none; 
-  color: white; 
+  text-decoration: none;
+  color: white;
   font-weight: bold;
   font-size: 23px;
   padding-right: 75px;
@@ -279,18 +280,14 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 .section-abouttitle {
   font-size: 54px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 55px;
   border-bottom: 3px solid var(--color-white);
   width: 85%;
   font-family: 'MerriweatherSans';
-
 }
 
 .about-content {
-  display: flex; 
-  align-items: center;
   gap: 70px; 
   margin-bottom: 55px;
 }
@@ -300,7 +297,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   width: 331px;
   background-image: url('@/assets/pictureOfMe.png');
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
-  background-position: center; /* Centrerer billedet i containeren */
+  background-position: center; 
   background-repeat: no-repeat;
   margin-left: 240px;
 }
@@ -319,8 +316,6 @@ const marqueeText2 = ref(' PORTFOLIO ')
 }
 
 .textContainer {
-  text-align: center; 
-  color: white; 
   font-size: 20px;
   font-family: 'PlusJakartaSans';
 
@@ -332,7 +327,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 .vidCV {
   max-width: 1000px; 
   aspect-ratio: 16 / 9; 
-  margin: 0 auto; /* Centrerer videoen horisontalt */
+  margin: 0 auto; 
   border-radius: 5px; 
   margin-bottom: 55px;
   border: 3px solid var(--color-white);
@@ -349,13 +344,15 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 .lineonly {
   border-bottom: 3px solid var(--color-white);
-  width: 85%; 
-  margin: 0 auto; /* Centrerer stregen horisontalt */
+  width: 85%;
+  margin: 0 auto;
   margin-bottom: 55px;
 }
 
+/* ------------------------------------------- MEDIA QUERIES --------------------------------------------*/
 
-@media (max-width: 768px) {
+
+@media (max-width: 700px) {
   .hero {
     height: 350px;
   }
@@ -417,18 +414,18 @@ const marqueeText2 = ref(' PORTFOLIO ')
   }
 
   .blobContainer {
-    width: 318px; 
+    width: 299px; 
     height: 227px; 
     padding: 1px;
   }
 
   .textContainer {
-    font-size: 13px; 
+    font-size: 12px; 
     padding: 1px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1260px) {
+@media (min-width: 700px) and (max-width: 1260px) {
 
   .about-content {
     flex-direction: column;
@@ -436,13 +433,14 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
 
   .imgContainer {
- display:none;
+  display:none;
   }
 
   .blob-row {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
+    gap: 20px;
   }
 
   .blobContainer {
