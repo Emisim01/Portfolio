@@ -381,11 +381,14 @@ const marqueeText2 = ref(' PORTFOLIO ')
   .blob-row {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
   .blob {
     height: 300px; 
-    width: 290px; 
+    width: 292px; 
+    margin: 15px;
+    margin-bottom: 25px;
   }
 
   .blob-text, .blob-text1 {
@@ -398,6 +401,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
   .section-title {
     font-size: 45px; 
+    margin-bottom: 0px;
   }
 
   .section-abouttitle {

@@ -113,7 +113,7 @@
       font-family: 'MerriweatherSans';
     }
 
-    .mainTextPicture1 {
+    .mainTexPicture1 {
       padding-bottom: 10px;
       font-size: 18px;
       font-family: 'PlusJakartaSans';
