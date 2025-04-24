@@ -3,7 +3,7 @@
     <div class="hidden md:flex gap-4">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/#projects">Projects</RouterLink>
-      <RouterLink to="/#about">About</RouterLink>
+      <RouterLink to="/#about">About me</RouterLink>
       <RouterLink to="/#contact">Contact</RouterLink>
     </div>
 

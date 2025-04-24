@@ -64,8 +64,8 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
         <div class="blob-row">
     <div class="blob">
-      <router-link to="/ux" class="blob-text uppercase">UX</router-link>
-    </div> 
+      <router-link to="/exams" class="blob-text uppercase">Exams</router-link>
+    </div>
     
     <div class="blob">
       <router-link to="/frontend development" class="blob-text1 uppercase">Frontend development</router-link>
@@ -75,8 +75,8 @@ const marqueeText2 = ref(' PORTFOLIO ')
 
   <div class="blob-row">
     <div class="blob">
-      <router-link to="/exams" class="blob-text uppercase">Exams</router-link>
-    </div>
+      <router-link to="/ux" class="blob-text uppercase">UX</router-link>
+    </div> 
     <div class="blob">
       <router-link to="/production" class="blob-text uppercase">Production</router-link>
     </div>
@@ -307,7 +307,7 @@ const marqueeText2 = ref(' PORTFOLIO ')
   width: 650px;
   background-image: url('@/assets/textboxblob.svg');
   background-size: contain; /* Sørger for, at billedet fylder hele containeren */
-  background-position: center; /* Centrerer billedet i containeren */
+  background-position: center; 
   background-repeat: no-repeat;
   display: flex; 
   align-items: center; 
@@ -391,12 +391,16 @@ const marqueeText2 = ref(' PORTFOLIO ')
     margin-bottom: 25px;
   }
 
+  .lineonly {
+    margin-bottom: 25px;
+  }
+
   .blob-text, .blob-text1 {
     font-size: 20px; 
   }
 
   .blob-text:hover, .blob-text1:hover {
-    font-size: 25px; 
+    font-size: 22px; 
   }
 
   .section-title {
@@ -444,7 +448,6 @@ const marqueeText2 = ref(' PORTFOLIO ')
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
-    gap: 20px;
   }
 
   .blobContainer {
